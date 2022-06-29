@@ -1,0 +1,49 @@
+//=================================================================================================================
+// Null Talisman (Agility)
+//=================================================================================================================
+"item_null_talisman_agility"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                            "1033"
+    "BaseClass"                     "item_lua"
+    "ScriptFile"					"items/item_null_talisman_agility"
+    "AbilityTextureName"            "item_null_talisman_agility"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "ItemQuality"                   "rare"
+    "ItemCost"                      "870"
+
+    "AbilityCooldown"				"90.0"
+    "AbilitySharedCooldown"			"ancient_start_item"
+
+    "AbilitySpecial" {
+        "_" {
+            "var_type"                      "FIELD_INTEGER"
+            "clock_time"                    "10"
+        }
+        "0" {
+            "var_type"                      "FIELD_INTEGER"
+            "primary_attribute_bonus"       "12"
+        }
+        "1" {
+            "var_type"                      "FIELD_INTEGER"
+            "secondary_attribute_bonus"     "9"
+        }
+        "2" {
+            "var_type"                      "FIELD_INTEGER"
+            "tertiary_attribute_bonus"      "3"
+        }
+        "3" {
+            "var_type"                      "FIELD_INTEGER"
+            "spell_amp_bonus_passive"       "4"
+        }
+        "4" {
+            "var_type"                      "FIELD_INTEGER"
+            "spell_amp_bonus_active"        "20"
+        }
+        "5" {
+            "var_type"                      "FIELD_INTEGER"
+            "duration"                      "10"
+        }
+    }
+}

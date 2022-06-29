@@ -1,0 +1,30 @@
+//=================================================================================================================
+// Ability: Dummy Unit
+//=================================================================================================================
+"dota_ability_dummy_unit"
+{
+	"BaseClass"          			    "ability_datadriven"
+	"AbilityName"           			"dota_ability_dummy_unit"
+	"AbilityBehavior"					"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+	"Modifiers"
+	{
+		"modifier_dota_ability_dummy_unit"
+		{
+			"IsHidden"				"1"
+			"Passive"				"1"
+
+			"States"
+			{
+				"MODIFIER_STATE_UNSELECTABLE"		"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_NO_HEALTH_BAR"		"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_INVULNERABLE"		"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_NOT_ON_MINIMAP"     "MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_ATTACK_IMMUNE"		"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_MAGIC_IMMUNE"		"MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_FLYING"		        "MODIFIER_STATE_VALUE_ENABLED"
+				"MODIFIER_STATE_OUT_OF_GAME"		"MODIFIER_STATE_VALUE_ENABLED"
+			}
+		}
+	}
+}

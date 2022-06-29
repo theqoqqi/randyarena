@@ -1,0 +1,289 @@
+"lang"
+{
+	"Language"	"russian"
+	"Tokens"
+	{
+		"addon_game_name"	"Арена Случая"
+
+
+		"select_ability_to_replace"     "Выберите способность для замены"
+		"select_ability_remaining_time"	"Осталось {d:seconds} сек."
+		"select_ability_timeout_warning"     "Иначе будет заменена случайная способность"
+
+
+		"dota_hud_error_cannot_unpack_own_gift" "Нельзя открыть свой же подарок"
+
+
+        "PointsToWin"                       "Еще {d:points_to_win}"
+        "PointsToWin_CloseToVictory"        "Еще {d:points_to_win}"
+        "PointsToWin_VeryCloseToVictory"    "Еще один!"
+        "PointsToWin_Victory"               "Победа!"
+
+
+		"Chest"	                "СЛУЧАЙНАЯ СПОСОБНОСТЬ"
+		"ItemWillSpawn"	        "ВОТ-ВОТ БУДЕТ ДОСТАВЛЕНА!"
+		"ItemHasSpawned"	    "В ПУТИ!"
+		"OverthrowTextPickup"   "ПОЛУЧИЛ"
+
+
+
+        "DOTA_Tooltip_modifier_get_xp"                                  "Аура богатства"
+        "DOTA_Tooltip_modifier_get_xp_Description"                      "Больше золота и опыта!"
+
+        "DOTA_Tooltip_modifier_get_xp_global"                           "Аура богатства"
+        "DOTA_Tooltip_modifier_get_xp_global_Description"               "Больше золота и опыта!"
+
+        "DOTA_Tooltip_Ability_item_ability_chest"                       "Сундук с умением"
+
+		"DOTA_Tooltip_Ability_item_book_of_strength"		            "Книга силы"
+		"DOTA_Tooltip_Ability_item_book_of_strength_Description"        "<h1>Активная: Consume</h1>Навсегда повышает силу на 3"
+        "DOTA_Tooltip_modifier_bonus_strength"                          "Бонусная сила"
+        "DOTA_Tooltip_modifier_bonus_strength_Description"              "Сила, полученная при использовании книг и обмене очков способностей"
+
+		"DOTA_Tooltip_Ability_item_book_of_agility"			            "Книга ловкости"
+		"DOTA_Tooltip_Ability_item_book_of_agility_Description"		    "<h1>Активная: Consume</h1>Навсегда повышает ловкость на 3"
+        "DOTA_Tooltip_modifier_bonus_agility"                           "Бонусная ловкость"
+        "DOTA_Tooltip_modifier_bonus_agility_Description"               "Ловкость, полученная при использовании книг и обмене очков способностей"
+
+		"DOTA_Tooltip_Ability_item_book_of_intelligence"	            "Книга интеллекта"
+		"DOTA_Tooltip_Ability_item_book_of_intelligence_Description"    "<h1>Активная: Consume</h1>Навсегда повышает интеллект на 3"
+        "DOTA_Tooltip_modifier_bonus_intelligence"                      "Бонусный интеллект"
+        "DOTA_Tooltip_modifier_bonus_intelligence_Description"          "Интеллект, полученный при использовании книг и обмене очков способностей"
+
+		"DOTA_Tooltip_Ability_item_book_of_skill_points"	            "Книга навыков"
+		"DOTA_Tooltip_Ability_item_book_of_skill_points_Description"    "<h1>Активная: Consume</h1>Увеличивает количество очков способностей на 1"
+
+		"DOTA_Tooltip_Ability_item_rapier_neutral"	                    "#DOTA_Tooltip_Ability_item_rapier"
+		"DOTA_Tooltip_Ability_item_rapier_neutral_bonus_damage"         "+$damage"
+		"DOTA_Tooltip_Ability_item_rapier_neutral_Description"		    "<h1>Пассивная: Everlasting</h1><font color='#e03e2e'>Предмет не выпадает при смерти и не может быть уничтожен.</font><br><br>Если передать предмет союзнику или его подберет враг, бонусы от Divine Rapier сможет получить кто угодно.<br><br>Курьер не может подобрать этот предмет.\n\n<h1>Пассивная: True Strike</h1> Атаки без промаха."
+
+        "default_passive_item_description"                              "При применении дает вам указанные бонусы навсегда<br><font color='#e03e2e'>Бонусы не будут работать, если не применить предмет</font>"
+
+		"DOTA_Tooltip_Ability_item_aether_shining"	                    "Aether Shining"
+		"DOTA_Tooltip_Ability_item_aether_shining_cast_range_bonus"     "+$cast_range"
+		"DOTA_Tooltip_Ability_item_aether_shining_Description"          "#default_passive_item_description"
+		"DOTA_Tooltip_Ability_item_aether_shining_Note0"                "Бонусы не складываются с бонусами от Aether Lens"
+        "DOTA_Tooltip_modifier_aether_shining"                          "Aether Shining"
+        "DOTA_Tooltip_modifier_aether_shining_Description"              "+%dMODIFIER_PROPERTY_CAST_RANGE_BONUS% к дальности применения способностей"
+
+		"DOTA_Tooltip_Ability_item_octarine_shining"	                "Octarine Shining"
+		"DOTA_Tooltip_Ability_item_octarine_shining_bonus_cooldown"	    "%-ко времени перезарядки способностей"
+		"DOTA_Tooltip_Ability_item_octarine_shining_hero_lifesteal"	    "%+к вампиризму способностями (герои)"
+		"DOTA_Tooltip_Ability_item_octarine_shining_creep_lifesteal"	"%+к вампиризму способностями (крипы)"
+		"DOTA_Tooltip_Ability_item_octarine_shining_Description"        "#default_passive_item_description"
+		"DOTA_Tooltip_Ability_item_octarine_shining_Note0"              "Бонусы не складываются с бонусами от Octarine Core"
+        "DOTA_Tooltip_modifier_octarine_shining"                        "Octarine Shining"
+        "DOTA_Tooltip_modifier_octarine_shining_Description"            "+%dMODIFIER_PROPERTY_COOLDOWN_PERCENTAGE%%% к перезарядке способностей<br>+%dMODIFIER_PROPERTY_TOOLTIP%%% к вампиризму способностями (герои)<br>+%dMODIFIER_PROPERTY_TOOLTIP2%%% к вампиризму способностями (крипы)"
+
+		"DOTA_Tooltip_Ability_item_holy_shining"	                    "Holy Shining"
+		"DOTA_Tooltip_Ability_item_holy_shining_heal_increase"	        "%+к усилению лечения"
+		"DOTA_Tooltip_Ability_item_holy_shining_Description"            "<h1>Пассивная: Energy Charge</h1>Если здоровье героя опускается ниже %health_threshold%%, мгновенно восстанавливает %restore_per_charge% здоровья и маны за каждый имеющийся заряд, расходуя все заряды.<br><br>Может иметь до %max_charges% зарядов. Получает один заряд каждый раз, когда видимый враг в радиусе %charge_radius% использует способность.\n\nПри применении дает вам указанные бонусы навсегда<br><font color='#e03e2e'>Бонусы не будут работать, если не применить предмет</font>"
+		"DOTA_Tooltip_Ability_item_holy_shining_Note0"                  "Бонусное усиление лечения не складывается с усилением от Holy Locket.<br>Если в инвентаре будут находиться Holy Locket, Magic Wand или Magic Stick, то в первую очередь будут заряжаться предметы, а только после них Holy Shining."
+		"DOTA_Tooltip_modifier_holy_shining"	                        "Holy Shining"
+        "DOTA_Tooltip_modifier_holy_shining_Description"                "+%dMODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE%%% к усилению лечения<br><br><h1>Способность: Energy Charge</h1>Если здоровье героя опускается ниже %dMODIFIER_PROPERTY_TOOLTIP%%%, мгновенно восстанавливает %dMODIFIER_PROPERTY_TOOLTIP2% здоровья и маны за каждый имеющийся заряд, расходуя все заряды.<br><br>Может иметь до %dMODIFIER_PROPERTY_TOOLTIP2% зарядов. Получает один заряд каждый раз, когда видимый враг в радиусе %dMODIFIER_PROPERTY_TOOLTIP2% использует способность."
+
+		"DOTA_Tooltip_Ability_item_desolation_orb"	                    "Desolation Orb"
+		"DOTA_Tooltip_Ability_item_desolation_orb_Description"          "<h1>Пассивная: Corruption</h1>Атаки снижают броню цели на %corruption_armor%. Эффект длится %corruption_duration% сек.\n\nПри применении дает вам указанные бонусы навсегда<br><font color='#e03e2e'>Бонусы не будут работать, если не применить предмет</font>"
+		"DOTA_Tooltip_Ability_item_desolation_orb_Note0"                "Бонусы не складываются с бонусами от Desolator"
+		"DOTA_Tooltip_Ability_item_desolation_orb_Note1"                "Снижение брони действует на постройки"
+		"DOTA_Tooltip_Ability_item_desolation_orb_Note2"                "Эффект можно развеять"
+		"DOTA_Tooltip_modifier_desolation_orb"	                        "Desolation Orb"
+        "DOTA_Tooltip_modifier_desolation_orb_Description"              "<h1>Пассивная: Corruption</h1>Атаки снижают броню цели на %dMODIFIER_PROPERTY_TOOLTIP%. Эффект длится %dMODIFIER_PROPERTY_TOOLTIP2% сек."
+		"DOTA_Tooltip_modifier_desolation_orb_debuff"					"Corruption"
+		"DOTA_Tooltip_modifier_desolation_orb_debuff_Description"		"Атака с Desolation Orb снизила броню этого существа на %dMODIFIER_PROPERTY_PHYSICAL_ARMOR_BONUS%."
+
+		"DOTA_Tooltip_Ability_item_skadi_orb"	                        "Orb of Skadi"
+		"DOTA_Tooltip_Ability_item_skadi_orb_Description"               "<h1>Пассивная: Cold Attack</h1>Каждая атака замедляет передвижение и атаку цели, а также уменьшает её лечение, восстановление здоровья и вампиризм на %heal_reduction%%% на %cold_duration% сек. Замедление зависит от типа атаки жертвы: у существ дальнего боя замедляет передвижение на %cold_slow_ranged%%%, атаку — на %cold_slow_ranged%. У существ ближнего боя замедляет передвижение на %cold_slow_melee%%%, атаку — на %cold_slow_melee%.\n\nПри применении дает вам указанные бонусы навсегда<br><font color='#e03e2e'>Бонусы не будут работать, если не применить предмет</font>"
+		"DOTA_Tooltip_Ability_item_skadi_orb_Note0"                     "Бонусы не складываются с бонусами от Eye of Skadi"
+		"DOTA_Tooltip_modifier_skadi_orb"	                            "Orb of Skadi"
+        "DOTA_Tooltip_modifier_skadi_orb_Description"                   "<h1>Пассивная: Cold Attack</h1>Каждая атака замедляет передвижение и атаку цели, а также уменьшает её лечение, восстановление здоровья и вампиризм на %dMODIFIER_PROPERTY_TOOLTIP%%% на %dMODIFIER_PROPERTY_TOOLTIP2% сек. Замедление зависит от типа атаки жертвы: у существ дальнего боя замедляет передвижение на %dMODIFIER_PROPERTY_TOOLTIP2%%%, атаку — на %dMODIFIER_PROPERTY_TOOLTIP2%. У существ ближнего боя замедляет передвижение на %dMODIFIER_PROPERTY_TOOLTIP2%%%, атаку — на %dMODIFIER_PROPERTY_TOOLTIP2%."
+		"DOTA_Tooltip_modifier_skadi_orb_debuff"					    "Cold Attack"
+		"DOTA_Tooltip_modifier_skadi_orb_debuff_Description"		    "Скорость передвижения уменьшена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%, скорость атаки уменьшена на %dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT%, восстановление здоровья уменьшено на %dMODIFIER_PROPERTY_HP_REGEN_AMPLIFY_PERCENTAGE%%%"
+
+		"DOTA_Tooltip_Ability_item_poison_orb"	                        "Orb of the Witch"
+		"DOTA_Tooltip_Ability_item_poison_orb_Description"              "<h1>Пассивное: Poison</h1>Следующая атака отравит жертву на %slow_duration% сек., замедлив её на %slow%%% и каждую секунду нанося ей урон, равный интеллекту владельца, помноженному на %int_damage_multiplier%. Этой атакой невозможно промахнуться.\n\nПри применении дает вам указанные бонусы навсегда<br><font color='#e03e2e'>Бонусы не будут работать, если не применить предмет</font>"
+		"DOTA_Tooltip_Ability_item_poison_orb_Note0"                    "Бонусы не складываются с бонусами от Witch Blade"
+		"DOTA_Tooltip_Ability_item_poison_orb_Note1"                    "Эффект можно развеять"
+		"DOTA_Tooltip_modifier_poison_orb"	                            "Orb of the Witch"
+        "DOTA_Tooltip_modifier_poison_orb_Description"                  "<h1>Пассивное: Poison</h1>Следующая атака отравит жертву на %dMODIFIER_PROPERTY_TOOLTIP% сек., замедлив её на %dMODIFIER_PROPERTY_TOOLTIP2%%% и каждую секунду нанося ей урон, равный интеллекту владельца, помноженному на %dMODIFIER_PROPERTY_TOOLTIP2%. Этой атакой невозможно промахнуться."
+		"DOTA_Tooltip_modifier_poison_orb_debuff"					    "Poison"
+		"DOTA_Tooltip_modifier_poison_orb_debuff_Description"		    "Получает урон каждую секунду. Скорость передвижения уменьшена на %dMODIFIER_PROPERTY_MOVESPEED_BONUS_PERCENTAGE%%%."
+
+		"DOTA_Tooltip_Ability_item_antimagicy_orb"	                    "Orb of the Antimagicy"
+		"DOTA_Tooltip_Ability_item_antimagicy_orb_Description"          "<h1>Пассивное: Antimagicy</h1>Атакуемые вами враги наносят на %spell_amp_debuff%%% меньше урона заклинаниями. Действует %duration% сек.\n\nПри применении дает вам указанные бонусы навсегда<br><font color='#e03e2e'>Бонусы не будут работать, если не применить предмет</font>"
+		"DOTA_Tooltip_Ability_item_antimagicy_orb_Note0"                "Бонусы не складываются с бонусами от Mage Slayer"
+		"DOTA_Tooltip_Ability_item_antimagicy_orb_Note1"                "Эффект можно развеять"
+		"DOTA_Tooltip_modifier_antimagicy_orb"	                        "Orb of the Antimagicy"
+        "DOTA_Tooltip_modifier_antimagicy_orb_Description"              "<h1>Пассивное: Antimagicy</h1>Атакуемые вами враги наносят на %dMODIFIER_PROPERTY_TOOLTIP%%% меньше урона заклинаниями. Действует %dMODIFIER_PROPERTY_TOOLTIP2% сек."
+		"DOTA_Tooltip_modifier_antimagicy_orb_debuff"					"Antimagicy"
+		"DOTA_Tooltip_modifier_antimagicy_orb_debuff_Description"		"Наносит на %dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%% меньше урона заклинаниями."
+
+		"DOTA_Tooltip_Ability_item_book_of_strength_neutral"		            "#DOTA_Tooltip_Ability_item_book_of_strength"
+		"DOTA_Tooltip_Ability_item_book_of_strength_neutral_Description"        "#DOTA_Tooltip_Ability_item_book_of_strength_Description"
+        "DOTA_Tooltip_modifier_bonus_strength_neutral"                          "#DOTA_Tooltip_modifier_bonus_strength"
+        "DOTA_Tooltip_modifier_bonus_strength_neutral_Description"              "#DOTA_Tooltip_modifier_bonus_strength_Description"
+
+		"DOTA_Tooltip_Ability_item_book_of_agility_neutral"			            "#DOTA_Tooltip_Ability_item_book_of_agility"
+		"DOTA_Tooltip_Ability_item_book_of_agility_neutral_Description"		    "#DOTA_Tooltip_Ability_item_book_of_agility_Description"
+        "DOTA_Tooltip_modifier_bonus_agility_neutral"                           "#DOTA_Tooltip_modifier_bonus_agility"
+        "DOTA_Tooltip_modifier_bonus_agility_neutral_Description"               "#DOTA_Tooltip_modifier_bonus_agility_Description"
+
+		"DOTA_Tooltip_Ability_item_book_of_intelligence_neutral"	            "#DOTA_Tooltip_Ability_item_book_of_intelligence"
+		"DOTA_Tooltip_Ability_item_book_of_intelligence_neutral_Description"    "#DOTA_Tooltip_Ability_item_book_of_intelligence_Description"
+        "DOTA_Tooltip_modifier_bonus_intelligence_neutral"                      "#DOTA_Tooltip_modifier_bonus_intelligence"
+        "DOTA_Tooltip_modifier_bonus_intelligence_neutral_Description"          "#DOTA_Tooltip_modifier_bonus_intelligence_Description"
+
+		"DOTA_Tooltip_Ability_item_book_of_skill_points_neutral"	            "#DOTA_Tooltip_Ability_item_book_of_skill_points"
+		"DOTA_Tooltip_Ability_item_book_of_skill_points_neutral_Description"    "#DOTA_Tooltip_Ability_item_book_of_skill_points_Description"
+
+		"DOTA_Tooltip_Ability_item_ancient_sphere"	                                    "Ancient Sphere"
+		"DOTA_Tooltip_Ability_item_ancient_sphere_Description"                          "Сфера, таящая в себе мощь древних. Сама по себе не дает ничего, но способна наделить другие предметы особой силой."
+
+		"DOTA_Tooltip_Ability_item_bracer_agility"	                                    "Bracer (Agility)"
+		"DOTA_Tooltip_Ability_item_bracer_agility_primary_attribute_bonus"              "+$str"
+		"DOTA_Tooltip_Ability_item_bracer_agility_secondary_attribute_bonus"            "+$agi"
+		"DOTA_Tooltip_Ability_item_bracer_agility_tertiary_attribute_bonus"             "+$int"
+		"DOTA_Tooltip_Ability_item_bracer_agility_attack_speed_bonus_passive"           "+$attack"
+		"DOTA_Tooltip_Ability_item_bracer_agility_Description"                          "<h1>Активная: Release</h1>Увеличивает скорость атаки на %attack_speed_bonus_active% на %duration% сек."
+		"DOTA_Tooltip_Ability_item_bracer_agility_Note0"                                "Активные бонусы складываются с пассивными"
+        "DOTA_Tooltip_modifier_item_bracer_agility_active"                              "Скорость атаки от Bracer (Agility)"
+        "DOTA_Tooltip_modifier_item_bracer_agility_active_Description"                  "+%dMODIFIER_PROPERTY_ATTACKSPEED_BONUS_CONSTANT% к скорости атаки"
+
+		"DOTA_Tooltip_Ability_item_bracer_intellect"	                                "Bracer (Intellect)"
+		"DOTA_Tooltip_Ability_item_bracer_intellect_primary_attribute_bonus"            "+$str"
+		"DOTA_Tooltip_Ability_item_bracer_intellect_secondary_attribute_bonus"          "+$int"
+		"DOTA_Tooltip_Ability_item_bracer_intellect_tertiary_attribute_bonus"           "+$agi"
+		"DOTA_Tooltip_Ability_item_bracer_intellect_magic_resist_bonus_passive"         "%+$spell_resist"
+		"DOTA_Tooltip_Ability_item_bracer_intellect_Description"                        "<h1>Активная: Release</h1>Увеличивает сопротивление магии на %magic_resist_bonus_active%%% на %duration% сек."
+		"DOTA_Tooltip_Ability_item_bracer_intellect_Note0"                              "Активные бонусы складываются с пассивными"
+        "DOTA_Tooltip_modifier_item_bracer_intellect_active"                            "Сопротивление магии от Bracer (Intellect)"
+        "DOTA_Tooltip_modifier_item_bracer_intellect_active_Description"                "+%dMODIFIER_PROPERTY_MAGICAL_RESISTANCE_BONUS%%% к сопротивлению магии"
+
+		"DOTA_Tooltip_Ability_item_wraith_band_strength"	                            "Wraith Band (Strength)"
+		"DOTA_Tooltip_Ability_item_wraith_band_strength_primary_attribute_bonus"        "+$agi"
+		"DOTA_Tooltip_Ability_item_wraith_band_strength_secondary_attribute_bonus"      "+$str"
+		"DOTA_Tooltip_Ability_item_wraith_band_strength_tertiary_attribute_bonus"       "+$int"
+		"DOTA_Tooltip_Ability_item_wraith_band_strength_damage_bonus_passive"           "+$damage"
+		"DOTA_Tooltip_Ability_item_wraith_band_strength_Description"                    "<h1>Активная: Release</h1>Увеличивает урон на %damage_bonus_active% на %duration% сек."
+		"DOTA_Tooltip_Ability_item_wraith_band_strength_Note0"                          "Активные бонусы складываются с пассивными"
+        "DOTA_Tooltip_modifier_item_wraith_band_strength_active"                        "Урон от Wraith Band (Strength)"
+        "DOTA_Tooltip_modifier_item_wraith_band_strength_active_Description"            "+%dMODIFIER_PROPERTY_PREATTACK_BONUS_DAMAGE% к урону"
+
+		"DOTA_Tooltip_Ability_item_wraith_band_intellect"	                            "Wraith Band (Intellect)"
+		"DOTA_Tooltip_Ability_item_wraith_band_intellect_primary_attribute_bonus"       "+$agi"
+		"DOTA_Tooltip_Ability_item_wraith_band_intellect_secondary_attribute_bonus"     "+$int"
+		"DOTA_Tooltip_Ability_item_wraith_band_intellect_tertiary_attribute_bonus"      "+$str"
+		"DOTA_Tooltip_Ability_item_wraith_band_intellect_move_speed_bonus_passive"      "+$move_speed"
+		"DOTA_Tooltip_Ability_item_wraith_band_intellect_Description"                   "<h1>Активная: Release</h1>Увеличивает скорость передвижения на %move_speed_bonus_active% на %duration% сек."
+		"DOTA_Tooltip_Ability_item_wraith_band_intellect_Note0"                         "Активные бонусы складываются с пассивными"
+        "DOTA_Tooltip_modifier_item_wraith_band_intellect_active"                       "Скорость передвижения от Wraith Band (Intellect)"
+        "DOTA_Tooltip_modifier_item_wraith_band_intellect_active_Description"           "+%dMODIFIER_PROPERTY_MOVESPEED_BONUS_CONSTANT% к скорости передвижения"
+
+		"DOTA_Tooltip_Ability_item_null_talisman_strength"	                            "Null Talisman (Strength)"
+		"DOTA_Tooltip_Ability_item_null_talisman_strength_primary_attribute_bonus"      "+$int"
+		"DOTA_Tooltip_Ability_item_null_talisman_strength_secondary_attribute_bonus"    "+$str"
+		"DOTA_Tooltip_Ability_item_null_talisman_strength_tertiary_attribute_bonus"     "+$agi"
+		"DOTA_Tooltip_Ability_item_null_talisman_strength_mana_reduction_bonus_passive" "%Уменьшение расхода и потери маны:"
+		"DOTA_Tooltip_Ability_item_null_talisman_strength_Description"                  "<h1>Активная: Release</h1>Уменьшает расход и потери маны на %mana_reduction_bonus_active%%% на %duration% сек."
+		"DOTA_Tooltip_Ability_item_null_talisman_strength_Note0"                        "Активные бонусы складываются с пассивными"
+        "DOTA_Tooltip_modifier_item_null_talisman_strength_active"                      "Уменьшение расхода маны от Null Talisman (Strength)"
+        "DOTA_Tooltip_modifier_item_null_talisman_strength_active_Description"          "Расход и потери маны уменьшены на %fMODIFIER_PROPERTY_MANACOST_PERCENTAGE_STACKING%%%."
+
+		"DOTA_Tooltip_Ability_item_null_talisman_agility"	                            "Null Talisman (Agility)"
+		"DOTA_Tooltip_Ability_item_null_talisman_agility_primary_attribute_bonus"       "+$int"
+		"DOTA_Tooltip_Ability_item_null_talisman_agility_secondary_attribute_bonus"     "+$agi"
+		"DOTA_Tooltip_Ability_item_null_talisman_agility_tertiary_attribute_bonus"      "+$str"
+		"DOTA_Tooltip_Ability_item_null_talisman_agility_spell_amp_bonus_passive"       "%+$spell_amp"
+		"DOTA_Tooltip_Ability_item_null_talisman_agility_Description"                   "<h1>Активная: Release</h1>Увеличивает урону от способностей на %spell_amp_bonus_active%%% на %duration% сек."
+		"DOTA_Tooltip_Ability_item_null_talisman_agility_Note0"                         "Активные бонусы складываются с пассивными"
+        "DOTA_Tooltip_modifier_item_null_talisman_agility_active"                       "Урон от способностей от Null Talisman (Agility)"
+        "DOTA_Tooltip_modifier_item_null_talisman_agility_active_Description"           "+%dMODIFIER_PROPERTY_SPELL_AMPLIFY_PERCENTAGE%%% к урону от способностей"
+
+		"DOTA_Tooltip_Ability_item_true_sight_orb"	                    "Orb of True Sight"
+		"DOTA_Tooltip_Ability_item_true_sight_orb_Description"          "<h1>Пассивная: True Sight</h1>Даёт владельцу и его союзникам возможность видеть невидимых существ и варды в радиусе %radius%.\n\nПри применении дает вам указанные бонусы навсегда<br><font color='#e03e2e'>Бонусы не будут работать, если не применить предмет</font>"
+		"DOTA_Tooltip_modifier_true_sight_orb"	                        "Orb of True Sight"
+        "DOTA_Tooltip_modifier_true_sight_orb_Description"              "<h1>Пассивная: True Sight</h1>Даёт владельцу и его союзникам возможность видеть невидимых существ и варды в радиусе %radius%."
+
+		"DOTA_Tooltip_Ability_item_christmas_gift"	                    "Christmas Gift"
+		"DOTA_Tooltip_Ability_item_christmas_gift_Description"          "<h1>Активная: Unpack</h1>Даёт использующему случайный подарок"
+        "DOTA_Tooltip_Ability_item_christmas_gift_Note0"                "Не может быть применено героем, купившим этот предмет"
+
+
+
+		"Remaining"            "ОСТАЛОСЬ"
+		"Overtime"             "ДОБАВОЧНОЕ ВРЕМЯ!"
+		"OvertimeInstructions" "УБЕЙТЕ, ЧТОБЫ ПОБЕДИТЬ"
+
+
+
+		"Unassigned"	"Неопределившиеся"
+		"Spectator"	    "Наблюдатели"
+		"Neutrals"	    "Нейтральная команда"
+		"NoTeam"	    "Нет команды"
+
+        "DOTA_GoodGuys"	"Бирюзовые тигры"
+        "DOTA_BadGuys"	"Желтые обезьяны"
+        "DOTA_Custom1"	"Розовые драконы"
+        "DOTA_Custom2"	"Оранжевые псы"
+        "DOTA_Custom3"	"Синие петухи"
+        "DOTA_Custom4"	"Зеленые бараны"
+        "DOTA_Custom5"	"Коричневые крысы"
+        "DOTA_Custom6"	"Голубые кабаны"
+        "DOTA_Custom7"	"Оливковые змеи"
+        "DOTA_Custom8"	"Фиолетовые кони"
+
+
+
+        "game_info_objective_header"    "Цель"
+        "game_info_objective_text"      "Убивайте вражеских героев! Победит команда,
+                                         которая первая наберет достаточно убийств."
+
+        "game_info_scramble_header"     "Обмен"
+        "game_info_scramble_text"       "В начале игры все игроки обмениваются
+                                         <span class='Ability'>способностями</span>.
+                                         Вы выбираете ту, от которой хотите избавиться, и взамен
+                                         получаете <span class='Ability'>способность</span>
+                                         другого игрока."
+        "game_info_scramble_warning"    "Если не выбрать способность,
+                                         заменится случайная."
+
+        "game_info_circle_header"       "Круг"
+        "game_info_circle_text"         "Старайтесь находиться в центре карты, так как в кругу
+                                         вы получаете больше <span class='XP'>опыта</span>
+                                         и <span class='Gold'>золота</span>. Вне круга вы так же
+                                         получаете <span class='Gold'>золото</span> и
+                                         <span class='XP'>опыт</span>, но в меньшем количестве."
+
+        "game_info_chest_header"        "Сундуки"
+        "game_info_chest_text"          "Периодически будет появляться
+                                         <span class='Courier'>герои-курьеры</span>, приносящие
+                                         сундуки со <span class='Ability'>способностями</span>.
+                                         Подбирайте новые <span class='Ability'>способности</span>!"
+        "game_info_chest_warning"       "После того, как вы подберете сундук, вы должны выбрать
+                                         способность, которая будет заменена.
+                                         Если её не выбрать, заменится случайная."
+
+        "game_info_bounty_header"       "Руны"
+        "game_info_bounty_text"         "Собирайте руны!
+                                         Золотые руны дают <span class='Gold'>золото</span>
+                                         и <span class='AbilityPoint'>одно очко</span> для улучшения
+                                         <span class='Ability'>способностей</span>.
+                                         Руны усиления работают как обычно."
+
+
+
+        "tooltip_ability_points_title"          "Очки способностей"
+        "tooltip_ability_points_description"    "Вы можете использовать их для изучения ваших
+                                                 способностей и талантов."
+
+        "tooltip_randomize_ability_title"       "Заменить способность"
+        "tooltip_randomize_ability_description" "Вы можете использовать это, чтобы заменить
+                                                выбранную способность на случайную.
+                                                Это стоит 3 очка способностей."
+
+        "tooltip_exchange_points_title"         "Размен очков способностей"
+        "tooltip_exchange_points_description"   "Вы можете использовать это, чтобы обменять
+                                                одно очко способностей на +2 к силе, ловкости
+                                                и интеллекту."
+	}
+}

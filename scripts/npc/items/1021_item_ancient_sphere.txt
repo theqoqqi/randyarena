@@ -1,0 +1,22 @@
+//=================================================================================================================
+// Ancient Sphere
+//=================================================================================================================
+"item_ancient_sphere"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                            "1021"
+    "BaseClass"                     "item_datadriven"
+    "AbilityTextureName"            "item_ancient_sphere"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "ItemQuality"                   "rare"
+    "ItemCost"                      "275"
+    "IsTempestDoubleClonable"		"0"
+    "ItemSellable"					"1"
+    "PlayerSpecificCooldown"		"1"
+    "ItemShareability"              "ITEM_NOT_SHAREABLE"
+    "ItemStockMax"					"3"
+    "ItemStockInitial"				"1"
+    "ItemStockTime"					"600.0"
+    "ItemInitialStockTime"			"0.0"
+}

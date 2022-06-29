@@ -1,0 +1,27 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Philosopher's Stone
+	//=================================================================================================================
+	"item_philosophers_stone"
+	{
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"bonus_gpm"			    "450"
+			}
+			"02"
+			{
+				"var_type"			    "FIELD_INTEGER"
+				"bonus_mana"		    "200"
+			}
+			"03"
+			{
+				"var_type"			    "FIELD_INTEGER"
+				"bonus_damage"		    "-50"
+			}
+		}
+	}
+}

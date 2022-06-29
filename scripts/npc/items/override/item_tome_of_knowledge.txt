@@ -1,0 +1,29 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Tome of Knowledge
+	//=================================================================================================================
+	"item_tome_of_knowledge"
+	{
+		"ItemCost"						"500"
+		"ItemInitialStockTime"			"195.0"
+		"ItemStockTime"					"600.0"
+		"ItemStockMax"					"3"
+
+		"ItemStackable"					"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"xp_bonus"				"500"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"xp_per_use"			"1500"
+			}
+		}
+	}
+}

@@ -1,0 +1,26 @@
+//=================================================================================================================
+// Recipe: Orb of Desolation
+//=================================================================================================================
+"item_recipe_desolation_orb"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"							"1013"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                     "item_datadriven"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"			"item_recipe_desolator"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"						"1400"
+    "ItemShopTags"					""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_desolation_orb"
+    "ItemRequirements"
+    {
+        "01"						"item_desolator"
+    }
+}

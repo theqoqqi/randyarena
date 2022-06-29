@@ -1,0 +1,41 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Orb of Venom
+	//=================================================================================================================
+	"item_orb_of_venom"
+	{
+		"ItemPurchasable"				"0"
+		"ItemSellable"					"0"
+		"ItemIsNeutralDrop"				"1"
+
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"poison_damage_melee"	"20.0"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"poison_damage_range"	"20.0"
+			}
+			"03"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"poison_movement_speed_melee"	"-8"
+			}
+			"04"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"poison_movement_speed_range"	"-5"
+			}
+			"05"
+			{
+				"var_type"				"FIELD_FLOAT"
+				"poison_duration"		"2.0"
+			}
+		}
+	}
+}

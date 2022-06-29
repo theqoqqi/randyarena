@@ -1,0 +1,49 @@
+//=================================================================================================================
+// Bracer (Intellect)
+//=================================================================================================================
+"item_bracer_intellect"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                            "1025"
+    "BaseClass"                     "item_lua"
+    "ScriptFile"					"items/item_bracer_intellect"
+    "AbilityTextureName"            "item_bracer_intellect"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "ItemQuality"                   "rare"
+    "ItemCost"                      "870"
+
+    "AbilityCooldown"				"90.0"
+    "AbilitySharedCooldown"			"ancient_start_item"
+
+    "AbilitySpecial" {
+        "_" {
+            "var_type"                      "FIELD_INTEGER"
+            "clock_time"                    "10"
+        }
+        "0" {
+            "var_type"                      "FIELD_INTEGER"
+            "primary_attribute_bonus"       "12"
+        }
+        "1" {
+            "var_type"                      "FIELD_INTEGER"
+            "secondary_attribute_bonus"     "9"
+        }
+        "2" {
+            "var_type"                      "FIELD_INTEGER"
+            "tertiary_attribute_bonus"      "3"
+        }
+        "3" {
+            "var_type"                      "FIELD_INTEGER"
+            "magic_resist_bonus_passive"    "5"
+        }
+        "4" {
+            "var_type"                      "FIELD_INTEGER"
+            "magic_resist_bonus_active"     "25"
+        }
+        "5" {
+            "var_type"                      "FIELD_INTEGER"
+            "duration"                      "10"
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// Dota Abilities Override File
+
+#base "items/override/item_aghanims_shard.txt"
+#base "items/override/item_bracer.txt"
+// #base "items/override/item_dagon.txt"
+#base "items/override/item_elixer.txt"
+#base "items/override/item_hand_of_midas.txt"
+#base "items/override/item_necronomicon.txt"
+#base "items/override/item_necronomicon_2.txt"
+#base "items/override/item_necronomicon_3.txt"
+#base "items/override/item_null_talisman.txt"
+// #base "items/override/item_orb_of_venom.txt"
+#base "items/override/item_philosophers_stone.txt"
+#base "items/override/item_recipe_necronomicon.txt"
+#base "items/override/item_recipe_necronomicon_2.txt"
+#base "items/override/item_recipe_necronomicon_3.txt"
+#base "items/override/item_repair_kit.txt"
+#base "items/override/item_satchel.txt"
+#base "items/override/item_tome_of_knowledge.txt"
+#base "items/override/item_vengeances_shadow.txt"
+#base "items/override/item_wraith_band.txt"
+
+"DOTAAbilities"
+{
+    "Version"   "1"
+
+    "item_courier"      "REMOVE"
+    "item_bracer"      "REMOVE"
+    "item_wraith_band"      "REMOVE"
+    "item_null_talisman"      "REMOVE"
+}

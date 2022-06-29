@@ -1,0 +1,50 @@
+//=================================================================================================================
+// Orb of Skadi
+//=================================================================================================================
+"item_skadi_orb"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                            "1016"
+    "BaseClass"                     "item_datadriven"
+    "AbilityTextureName"            "item_skadi"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "ItemQuality"                   "consumable"
+    "ItemCost"                      "7300"
+    "ItemShareability"              "ITEM_NOT_SHAREABLE"
+    //"ItemCastOnPickup"              "1"
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "Target"                "CASTER"
+            "ScriptFile"            "scripts/vscripts/items/item_shining_consumer.lua"
+            "Function"              "ConsumeShining"
+            "ModifierName"          "modifier_skadi_orb"
+        }
+    }
+
+    "AbilitySpecial" {
+        "0"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "cold_slow_melee"	    "-20"
+        }
+        "1"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "cold_slow_ranged"	    "-45"
+        }
+        "2"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "cold_duration"	        "3.0"
+        }
+        "3"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "heal_reduction"	    "35"
+        }
+    }
+}

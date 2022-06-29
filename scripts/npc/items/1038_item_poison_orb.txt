@@ -1,0 +1,66 @@
+//=================================================================================================================
+// Orb of the Witch
+//=================================================================================================================
+"item_poison_orb"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"                            "1038"
+    "BaseClass"                     "item_datadriven"
+    "AbilityTextureName"            "item_witch_blade"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "ItemQuality"                   "consumable"
+    "ItemCost"                      "3600"
+    "ItemShareability"              "ITEM_NOT_SHAREABLE"
+    //"ItemCastOnPickup"              "1"
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "Target"                "CASTER"
+            "ScriptFile"            "scripts/vscripts/items/item_shining_consumer.lua"
+            "Function"              "ConsumeShining"
+            "ModifierName"          "modifier_poison_orb"
+        }
+    }
+
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_attack_speed"	"35"
+        }
+        "02"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_intellect"		"12"
+        }
+        "03"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_armor"			"6"
+        }
+        "04"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "int_damage_multiplier"	"1"
+        }
+        "05"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "slow"	"25"
+        }
+        "06"
+        {
+            "var_type"				"FIELD_FLOAT"
+            "slow_duration"	"3"
+        }
+        "07"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "projectile_speed"	    "300"
+        }
+    }
+}

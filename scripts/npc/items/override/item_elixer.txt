@@ -1,0 +1,29 @@
+"DOTAAbilities"
+{
+	//=================================================================================================================
+	// Elixir
+	//=================================================================================================================
+	"item_elixer"
+	{
+        "AbilityTextureName"            "item_elixer"
+		"ItemInitialCharges"			"3"
+		"AbilitySpecial"
+		{
+			"01"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"health"			    "600"
+			}
+			"02"
+			{
+				"var_type"				"FIELD_INTEGER"
+				"mana"			        "400"
+			}
+			"03"
+			{
+				"var_type"			    "FIELD_FLOAT"
+				"duration"			    "2"
+			}
+		}
+	}
+}

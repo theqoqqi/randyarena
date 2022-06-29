@@ -1,0 +1,22 @@
+"AddonInfo"
+{
+  "TeamCount" "10"
+  "maps"      "randyarena"
+  "IsPlayable"  "1"
+  "randyarena"
+  {
+          "MaxPlayers"                    "8"
+  }
+  "template_map"
+  {
+          "MaxPlayers"                    "16"
+  }
+  "playground"
+  {
+          "MaxPlayers"                    "10"
+  }
+  "defaultdota"
+  {
+          "MaxPlayers"                    "10"
+  }
+}
