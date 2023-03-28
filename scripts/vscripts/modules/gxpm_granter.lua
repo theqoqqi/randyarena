@@ -12,6 +12,8 @@ function GxpmGranter:Create(randyArena, options)
 
     local instance = GxpmGranter();
 
+    instance.randyArena = randyArena;
+
     return instance;
 end
 
@@ -49,7 +51,9 @@ function GxpmGranter:DoGxpmTick(gold, xp, killFactor, radius)
     Players:ForEachHeroEntity(function (playerId, heroEntity)
         if radius == -1 or heroEntity:GetAbsOrigin():Length2D() < radius then
             local teamKills = Players:GetTeamKills(heroEntity:GetTeam());
-            local multiplier = 1 + (maxKills - teamKills) * killFactor;
+            local comebackFactor = self.randyArena.gameSetup.comebackFactor;
+            local multiplier = 1 + (maxKills - teamKills) * (killFactor * comebackFactor);
+
             Players:ModifyGold(playerId, gold * multiplier, true, DOTA_ModifyGold_GameTick);
             Players:AddExperience(playerId, xp * multiplier, DOTA_ModifyXP_Unspecified);
         end

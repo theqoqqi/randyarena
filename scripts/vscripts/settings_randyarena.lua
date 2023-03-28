@@ -4,7 +4,7 @@ PARTICLES_FOLDER = 'particles/maps/solo';
 
 DEBUG_ABILITY_CHESTS = true and IsInToolsMode();
 DEBUG_ABILITY_RANDOMIZER = true and IsInToolsMode();
-FAST_START = true and IsInToolsMode();
+FAST_START = false and IsInToolsMode();
 DEBUG_ABILITY_CHEST = true and IsInToolsMode();
 DEBUG_RUNES = false and IsInToolsMode();
 DEBUG_DISABLE_CREATOR = true or not IsInToolsMode();
@@ -64,6 +64,10 @@ GAME_SETUP_OPTIONS = {
 	},
 	forceRules = {
 		options = { 0, 1, 2, 3, 4, 5, 6, 7, 8 },
+		defaultIndex = 0,
+	},
+	comebackFactor = {
+		options = { 1, 2, 3, 5, 10 },
 		defaultIndex = 0,
 	},
 };

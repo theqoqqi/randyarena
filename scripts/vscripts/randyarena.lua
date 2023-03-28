@@ -119,6 +119,7 @@ function RandyArena:InitRandyArena()
 		startPoints = 1,
 		freeRandoms = 0,
 		forceRules = 0,
+		comebackFactor = 1,
 	};
 	self.allHeroesInGame = false;
 	self.gameInProgress = false;
