@@ -678,6 +678,12 @@ ABILITIES = {
 		['morphling_morph_replicate']						= 0, -- internal
 		['morphling_morph']									= 0, -- internal
 	},
+	muerta = {
+		['muerta_dead_shot']								= DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['muerta_the_calling']								= DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['muerta_gunslinger']								= DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['muerta_pierce_the_veil']							= DISCARDABLE + DELIVERABLE + SWAPPABLE,
+	},
 	naga_siren = {
 		['naga_siren_mirror_image']							= DISCARDABLE + DELIVERABLE + SWAPPABLE,
 		['naga_siren_ensnare']								= DISCARDABLE + DELIVERABLE + SWAPPABLE,

@@ -20,13 +20,10 @@ end
 
 if DEBUG_ABILITY_RANDOMIZER then
 	FORCE_RANDOMIZED_ABILITY = {
-		'primal_beast_onslaught',
-		'primal_beast_trample',
-		'primal_beast_uproar',
-		'primal_beast_pulverize',
-		'primal_beast_rock_throw',
-		'zuus_thundergods_wrath',
-		'tinker_march_of_the_machines',
+		'muerta_dead_shot',
+		'muerta_the_calling',
+		'muerta_gunslinger',
+		'muerta_pierce_the_veil',
 	};
 end
 
