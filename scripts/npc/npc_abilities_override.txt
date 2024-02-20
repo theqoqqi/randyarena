@@ -24,8 +24,9 @@
 {
     "Version"   "1"
 
-    "item_courier"      "REMOVE"
-    "item_bracer"      "REMOVE"
-    "item_wraith_band"      "REMOVE"
-    "item_null_talisman"      "REMOVE"
+    // Игра теперь вылетает если раскомментить эти строчки
+    // "item_courier"      "REMOVE"
+    // "item_bracer"      "REMOVE"
+    // "item_wraith_band"      "REMOVE"
+    // "item_null_talisman"      "REMOVE"
 }
