@@ -1,0 +1,26 @@
+//=================================================================================================================
+// Recipe: Octarine Shining
+//=================================================================================================================
+"item_recipe_octarine_shining"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"							"13370009"														// unique ID number for this item.  Do not change this once established or it will invalidate collected stats.
+    "BaseClass"                     "item_datadriven"
+    "Model"							"models/props_gameplay/recipe.vmdl"
+    "AbilityTextureName"			"item_recipe_octarine_core"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"						"2100"
+    "ItemShopTags"					""
+
+    // Recipe
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemRecipe"					"1"
+    "ItemResult"					"item_octarine_shining"
+    "ItemRequirements"
+    {
+        "01"						"item_octarine_core"
+    }
+}

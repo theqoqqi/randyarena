@@ -1,0 +1,38 @@
+//=================================================================================================================
+// Divine Rapier (Neutral)
+//=================================================================================================================
+"item_rapier_neutral"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"							"13370006"
+    "BaseClass"                     "item_rapier"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+    "Model"							"models/props_gameplay/divine_rapier.vmdl"
+    "AbilityTextureName"			"item_rapier"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"						"0"
+    "ItemShopTags"					"damage"
+    "ItemQuality"					"epic"
+    "ItemAliases"					"divine rapier"
+    "ItemShareability"				"ITEM_FULLY_SHAREABLE"
+    "ItemSellable"					"0"
+    "ItemKillable"					"0"
+    "ItemPurchasable"				"0"
+    "AllowedInBackpack"				"1"
+    "ItemIsNeutralDrop"				"1"
+    "ShouldBeSuggested"				"1"
+
+    // Special
+    //-------------------------------------------------------------------------------------------------------------
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"				"FIELD_INTEGER"
+            "bonus_damage"			"150"
+        }
+    }
+}

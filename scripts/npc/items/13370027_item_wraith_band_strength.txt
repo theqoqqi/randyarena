@@ -1,0 +1,49 @@
+//=================================================================================================================
+// Wraith Band (Strength)
+//=================================================================================================================
+"item_wraith_band_strength"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"							"13370027"
+    "BaseClass"                     "item_lua"
+    "ScriptFile"					"items/item_wraith_band_strength"
+    "AbilityTextureName"            "item_wraith_band_strength"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "ItemQuality"                   "rare"
+    "ItemCost"                      "870"
+
+    "AbilityCooldown"				"90.0"
+    "AbilitySharedCooldown"			"ancient_start_item"
+
+    "AbilitySpecial" {
+        "_" {
+            "var_type"                      "FIELD_INTEGER"
+            "clock_time"                    "10"
+        }
+        "0" {
+            "var_type"                      "FIELD_INTEGER"
+            "primary_attribute_bonus"       "12"
+        }
+        "1" {
+            "var_type"                      "FIELD_INTEGER"
+            "secondary_attribute_bonus"     "9"
+        }
+        "2" {
+            "var_type"                      "FIELD_INTEGER"
+            "tertiary_attribute_bonus"      "3"
+        }
+        "3" {
+            "var_type"                      "FIELD_INTEGER"
+            "damage_bonus_passive"          "5"
+        }
+        "4" {
+            "var_type"                      "FIELD_INTEGER"
+            "damage_bonus_active"           "25"
+        }
+        "5" {
+            "var_type"                      "FIELD_INTEGER"
+            "duration"                      "5"
+        }
+    }
+}

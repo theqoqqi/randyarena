@@ -1,0 +1,41 @@
+//=================================================================================================================
+// Book of Strength (Neutral)
+//=================================================================================================================
+"item_book_of_strength_neutral"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"							"13370017"
+    "BaseClass"                     "item_datadriven"
+    "AbilityTextureName"            "item_book_of_strength"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "ItemQuality"                   "consumable"
+    "ItemCost"                      "0"
+    "ItemPermanent"					"0"
+    "IsTempestDoubleClonable"		"0"
+    "ItemPurchasable"				"0"
+    "ItemSellable"  				"0"
+    "ItemKillable"					"0"
+    "ItemIsNeutralDrop"				"1"
+    "ItemInitialCharges"            "1"
+    "ItemShareability"              "ITEM_FULLY_SHAREABLE"
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "Target"                "CASTER"
+            "ScriptFile"            "scripts/vscripts/items/item_book_of_attributes.lua"
+            "Function"              "ApplyBonusAttribute"
+            "ModifierName"          "modifier_bonus_strength"
+            "BonusAmount"           "%bonus_strength"
+        }
+    }
+    "AbilitySpecial"
+    {
+        "01"
+        {
+            "var_type"              "FIELD_FLOAT"
+            "bonus_strength"        "3"
+        }
+    }
+}

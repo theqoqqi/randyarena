@@ -1,0 +1,34 @@
+//=================================================================================================================
+// Aether Shining
+//=================================================================================================================
+"item_aether_shining"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"							"13370008"
+    "BaseClass"                     "item_datadriven"
+    "AbilityTextureName"            "item_aether_lens"
+    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
+    "ItemQuality"                   "consumable"
+    "ItemCost"                      "3275"
+    "ItemShareability"              "ITEM_NOT_SHAREABLE"
+    //"ItemCastOnPickup"              "1"
+
+    "OnSpellStart"
+    {
+        "RunScript"
+        {
+            "Target"                "CASTER"
+            "ScriptFile"            "scripts/vscripts/items/item_shining_consumer.lua"
+            "Function"              "ConsumeShining"
+            "ModifierName"          "modifier_aether_shining"
+        }
+    }
+
+    "AbilitySpecial" {
+        "0" {
+            "var_type"              "FIELD_INTEGER"
+            "cast_range_bonus"      "250"
+        }
+    }
+}
