@@ -34,6 +34,7 @@ function Precache(context)
 		PrecacheUnitByNameAsync('npc_dota_hero_' .. heroName, function(...) end);
 --		PrecacheModel('models/heroes/' .. heroName .. '/' .. heroName .. '.vmdl', context);
 		table.insert(abilitiesToDelivery, abilityInfo);
+		print('Random ability added: ' .. abilityInfo.abilityName .. ' (' .. heroName .. ')');
 	end
 
 	RandyArena.abilitiesToDelivery = abilitiesToDelivery;
