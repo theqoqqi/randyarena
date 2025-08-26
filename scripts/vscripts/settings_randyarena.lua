@@ -3,9 +3,9 @@
 PARTICLES_FOLDER = 'particles/maps/solo';
 
 DEBUG_ABILITY_CHESTS = true and IsInToolsMode();
-DEBUG_ABILITY_RANDOMIZER = true and IsInToolsMode();
+DEBUG_ABILITY_RANDOMIZER = false and IsInToolsMode();
 FAST_START = false and IsInToolsMode();
-DEBUG_ABILITY_CHEST = true and IsInToolsMode();
+DEBUG_ABILITY_CHEST = false and IsInToolsMode();
 DEBUG_RUNES = false and IsInToolsMode();
 DEBUG_DISABLE_CREATOR = true or not IsInToolsMode();
 
@@ -49,7 +49,7 @@ else
 	FORCE_PICKED_HERO = nil;
 end
 
-HEROES_TO_PRECACHE = IsInToolsMode() and 1 or 15;
+HEROES_TO_PRECACHE = 15;
 CLOSE_TO_VICTORY_THRESHOLD = 5;
 ABILITY_CHEST_THINKING_TIME = IsInToolsMode() and 5 or 17;
 
