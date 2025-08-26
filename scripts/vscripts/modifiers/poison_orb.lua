@@ -71,7 +71,7 @@ end
 function modifier_poison_orb_debuff:OnIntervalThink()
     local parent = self:GetParent();
     local caster = self:GetCaster();
-    local damage = caster:GetIntellect();
+    local damage = caster:GetIntellect(false);
     local casterPlayer = caster:GetPlayerOwner();
 
     ApplyDamage({
