@@ -38,10 +38,13 @@ function AbilityUtils:GetAllAbilitiesInfoByPlayers(swappableOnly)
     Players:ForEachHeroEntity(function(playerId, heroEntity)
         allAbilitiesInfo[playerId] = AbilityUtils:GetPlayerAbilitiesInfoTo(heroEntity, {}, function(list, abilityInfo)
             if swappableOnly then
-                local heroName = ParseHeroName(heroEntity:GetClassname());
-                local heroSwappableAbilities = ABILITIES[heroName].swappable;
-                if table.contains(heroSwappableAbilities, abilityInfo.abilityName) then
-                    list[abilityInfo.abilityIndex] = abilityInfo;
+                local heroName = ABILITY_NAMES_TO_HERO_NAMES[abilityInfo.abilityName];
+
+                if heroName then
+                    local heroSwappableAbilities = ABILITIES[heroName].swappable;
+                    if table.contains(heroSwappableAbilities, abilityInfo.abilityName) then
+                        list[abilityInfo.abilityIndex] = abilityInfo;
+                    end
                 end
             else
                 list[abilityInfo.abilityIndex] = abilityInfo;

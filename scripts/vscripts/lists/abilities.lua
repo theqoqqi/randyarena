@@ -41,6 +41,8 @@ function ReorganiseTable()
 						heroAbilities.deliverable[index] = abilityName;
 						logDeliverable = logDeliverable + 1;
 					end
+
+					ABILITY_NAMES_TO_HERO_NAMES[abilityName] = heroName;
 				end
 			end
 		end
@@ -1129,6 +1131,8 @@ ABILITIES = {
 		['zuus_thundergods_wrath']							= DISCARDABLE + DELIVERABLE + SWAPPABLE,
 	},
 };
+
+ABILITY_NAMES_TO_HERO_NAMES = {};
 
 ReorganiseTable();
 ReorganiseTable = nil;
