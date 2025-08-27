@@ -60,6 +60,8 @@ function Precache(context)
 		print('Courier model preloaded: ' .. modelInfo.flying);
 	end
 
+	PrecacheResource('model', 'models/props_gameplay/treasure_chest001.vmdl', context);
+
 	RandyArena.freePreloadedCourierModels = freePreloadedCourierModels;
 end
 
