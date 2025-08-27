@@ -149,8 +149,14 @@ end
 
 function AbilityUtils:ForEachVisibleAbility(heroEntity, callback)
     AbilityUtils:ForEachAbility(heroEntity, function(ability, index, name)
-        if not ability:IsHidden() then
-            callback(ability, index, name);
+        if not ability:IsHidden() and not ability:IsHiddenAsSecondaryAbility() then
+            local behavior = ability:GetBehavior();
+            local innateBit = 8796093022208;
+            local isInnate = behavior >= innateBit and (behavior % (2 * innateBit)) >= innateBit;
+
+            if not isInnate then
+                callback(ability, index, name);
+            end
         end
     end);
 end
