@@ -25,21 +25,9 @@ if IsServer() then
         courier:SetMaximumGoldBounty(level * 10 + 100);
         courier:SetMinimumGoldBounty(level * 10 + 100);
 
-        if (level >= 5) then
+        if (level >= 4) then
             self.flying = true;
             self:OnModelChanged();
-        end
-        if (level >= 10) then
-            courier:FindAbilityByName('courier_burst'):SetLevel(1);
-        end
-        if (level >= 15) then
-            -- can place wards
-        end
-        if (level >= 20) then
-            courier:FindAbilityByName('courier_shield'):SetLevel(1);
-        end
-        if (level >= 25) then
-            -- can use items
         end
     end
 

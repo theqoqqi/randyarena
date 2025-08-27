@@ -44,7 +44,6 @@ function RandyArena:_InitRandyArena()
     GameRules:EnableCustomGameSetupAutoLaunch( ENABLE_AUTO_LAUNCH )
   end
 
-
   -- This is multiteam configuration stuff
   if USE_AUTOMATIC_PLAYERS_PER_TEAM then
     local num = math.floor(10 / MAX_NUMBER_OF_TEAMS)

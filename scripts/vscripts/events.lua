@@ -27,7 +27,13 @@ function RandyArena:OnNPCSpawned(keys)
 
 	local npc = EntIndexToHScript(keys.entindex);
 
+	if npc:IsCourier() then
+		local playerId = npc:GetPlayerOwnerID();
 
+		npc:AddNewModifier(npc, nil, 'modifier_custom_courier', {
+			playerId = playerId,
+		});
+	end
 end
 
 -- An entity somewhere has been hurt.  This event fires very often with many units so don't do too many expensive

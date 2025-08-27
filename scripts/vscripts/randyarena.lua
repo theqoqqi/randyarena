@@ -125,6 +125,8 @@ function RandyArena:InitRandyArena()
 	self.gameInProgress = false;
 
 	local gmEntity = GameRules:GetGameModeEntity();
+
+	gmEntity:SetFreeCourierModeEnabled(true);
 	gmEntity:SetModifyGoldFilter(Dynamic_Wrap(self, 'ModifyGoldFilter'), self);
 
 	if IsInToolsMode() then
@@ -228,7 +230,6 @@ function RandyArena:OnHeroInGame(heroEntity)
 
 	local playerId = heroEntity:GetPlayerID();
 
-    SpawnCourierForPlayer(playerId);
 	heroEntity:SetAbilityPoints(self.gameSetup.freeRandoms);
 
 	print('Player ' .. playerId .. ' entindex: ' .. heroEntity:GetEntityIndex());
