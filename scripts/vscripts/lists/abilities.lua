@@ -27,12 +27,12 @@ function ReorganiseTable()
 
 					logTotal = logTotal + 1;
 
-					if bit.band(bits, SWAPPABLE) == SWAPPABLE then
+					if DISABLE_SWAP_RESTRICTIONS or bit.band(bits, SWAPPABLE) == SWAPPABLE then
 						heroAbilities.swappable[index] = abilityName;
 						logSwappable = logSwappable + 1;
 					end
 
-					if bit.band(bits, DISCARDABLE) == DISCARDABLE then
+					if DISABLE_SWAP_RESTRICTIONS or bit.band(bits, DISCARDABLE) == DISCARDABLE then
 						heroAbilities.discardable[index] = abilityName;
 						logDiscardable = logDiscardable + 1;
 					end

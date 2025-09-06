@@ -8,6 +8,7 @@ FAST_START = false and IsInToolsMode();
 DEBUG_ABILITY_CHEST = false and IsInToolsMode();
 DEBUG_RUNES = false and IsInToolsMode();
 DEBUG_DISABLE_CREATOR = true or not IsInToolsMode();
+DISABLE_SWAP_RESTRICTIONS = true;
 
 if DEBUG_ABILITY_CHEST then
 	FORCE_ABILITY_COURIER = 'hoodwink';
