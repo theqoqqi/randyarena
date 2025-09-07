@@ -56,6 +56,7 @@ require('modules/gxpm_granter');
 require('modules/bounty_rune_scrambler');
 require('modules/creator_controller');
 require('modules/illusion_fixer');
+require('modules/leader_fow_revealer');
 
 
 require('settings');
@@ -111,6 +112,7 @@ function RandyArena:InitRandyArena()
         BountyRuneScrambler:Create(self, {}),
 		CreatorController:Create(self, {}),
 		IllusionFixer:Create(self, {}),
+		LeaderFowRevealer:Create(self, {}),
     };
 
 	self.heroesInGame = 0;
