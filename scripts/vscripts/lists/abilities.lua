@@ -543,6 +543,19 @@ ABILITIES = {
 		-- unused abilities
         ['keeper_of_the_light_mana_leak']					= DELIVERABLE,
 	},
+	kez = {
+		-- TODO
+		['kez_echo_slash']                                  = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['kez_grappling_claw']                              = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['kez_kazurai_katana']                              = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['kez_switch_weapons']                              = 0, -- internal
+		['kez_raptor_dance']                                = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['kez_falcon_rush']                                 = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['kez_talon_toss']                                  = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['kez_shodo_sai']                                   = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['kez_ravens_veil']                                 = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['kez_shodo_sai_parry_cancel']                      = 0, -- internal
+	},
 	kunkka = {
 		['kunkka_torrent']									= DISCARDABLE + DELIVERABLE + SWAPPABLE,
 		['kunkka_tidebringer']								= DISCARDABLE + DELIVERABLE + SWAPPABLE,
@@ -838,6 +851,15 @@ ABILITIES = {
 		['riki_tricks_of_the_trade']						= DISCARDABLE + DELIVERABLE + SWAPPABLE,
         ['riki_poison_dart']						        = 0, -- shard
 		['riki_backstab']									= DISCARDABLE + DELIVERABLE + SWAPPABLE,
+	},
+	ringmaster = {
+		['ringmaster_tame_the_beasts']                      = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['ringmaster_the_box']                              = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['ringmaster_impalement']                           = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['ringmaster_empty_souvenir']                       = 0, -- internal
+		['ringmaster_spotlight']                            = 0, -- shard
+		['ringmaster_wheel']                                = DISCARDABLE + DELIVERABLE + SWAPPABLE,
+		['ringmaster_tame_the_beasts_crack']                = 0, -- internal
 	},
 	rubick = {
 		['rubick_telekinesis']								= DISCARDABLE + DELIVERABLE + SWAPPABLE,
