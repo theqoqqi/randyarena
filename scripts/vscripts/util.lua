@@ -38,10 +38,11 @@ function RandomFromTable(t)
 end
 
 function ConsumeRandomFromTable(t)
-    local keys = table.keys(t);
-    local key = keys[RandomInt(1, #keys)];
-    local value = t[key];
-    t[key] = nil;
+    local index = RandomInt(1, #t);
+    local value = t[index];
+
+    table.remove(t, index);
+
     return value;
 end
 
