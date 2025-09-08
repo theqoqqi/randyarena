@@ -4,7 +4,7 @@ PARTICLES_FOLDER = 'particles/maps/solo';
 
 DEBUG_ABILITY_CHESTS = true and IsInToolsMode();
 DEBUG_ABILITY_RANDOMIZER = false and IsInToolsMode();
-FAST_START = false and IsInToolsMode();
+FAST_START = true and IsInToolsMode();
 DEBUG_ABILITY_CHEST = false and IsInToolsMode();
 DEBUG_RUNES = false and IsInToolsMode();
 DEBUG_DISABLE_CREATOR = true or not IsInToolsMode();

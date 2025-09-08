@@ -199,21 +199,20 @@ function RandyArena:OnHeroInGame(heroEntity)
 	self.heroesInGame = self.heroesInGame + 1;
 
 	if IsInToolsMode() then
+--		heroEntity:AddItemByName('item_poison_orb');
+--		heroEntity:AddItemByName('item_antimagicy_orb');
+--		heroEntity:AddItemByName('item_blink');
+--		heroEntity:AddItemByName('item_christmas_gift');
 --		heroEntity:AddItemByName('item_manta');
-		heroEntity:AddItemByName('item_poison_orb');
-		heroEntity:AddItemByName('item_antimagicy_orb');
-		heroEntity:AddItemByName('item_blink');
-		heroEntity:AddItemByName('item_christmas_gift');
-		heroEntity:AddItemByName('item_manta');
+		heroEntity:AddItemByName('item_bracer_agility');
+		heroEntity:AddItemByName('item_bracer_intellect');
+		heroEntity:AddItemByName('item_wraith_band_strength');
+		heroEntity:AddItemByName('item_wraith_band_intellect');
+		heroEntity:AddItemByName('item_null_talisman_strength');
+		heroEntity:AddItemByName('item_null_talisman_agility');
 --		heroEntity:AddItemByName('item_christmas_gift');
 --		heroEntity:AddItemByName('item_christmas_gift');
 --		heroEntity:AddItemByName('item_christmas_gift');
---		heroEntity:AddItemByName('item_bracer_agility');
---		heroEntity:AddItemByName('item_bracer_intellect');
---		heroEntity:AddItemByName('item_wraith_band_strength');
---		heroEntity:AddItemByName('item_wraith_band_intellect');
---		heroEntity:AddItemByName('item_null_talisman_strength');
---		heroEntity:AddItemByName('item_null_talisman_agility');
 --		heroEntity:AddItemByName('item_skadi');
 --		heroEntity:AddItemByName('item_relic');
 --		heroEntity:AddItemByName('item_desolation_orb');
