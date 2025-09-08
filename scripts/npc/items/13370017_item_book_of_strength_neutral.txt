@@ -27,15 +27,10 @@
             "ScriptFile"            "scripts/vscripts/items/item_book_of_attributes.lua"
             "Function"              "ApplyBonusAttribute"
             "ModifierName"          "modifier_bonus_strength"
-            "BonusAmount"           "%bonus_strength"
         }
     }
-    "AbilitySpecial"
+    "AbilityValues"
     {
-        "01"
-        {
-            "var_type"              "FIELD_FLOAT"
-            "bonus_strength"        "3"
-        }
+        "bonus_amount"         "3"
     }
 }

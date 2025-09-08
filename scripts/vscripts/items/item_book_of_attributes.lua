@@ -5,7 +5,7 @@ function ApplyBonusAttribute(keys)
 
         local ability = keys.ability;
         local modifierName = keys.ModifierName;
-        local bonusAmount = keys.BonusAmount;
+        local bonusAmount = keys.ability:GetSpecialValueFor('bonus_amount');
         local charges = ability:GetCurrentCharges();
         local playerEntity = Players:GetPlayerEntity(caster:GetPlayerID());
 
