@@ -12,7 +12,7 @@ end
 
 function LeaderFowRevealer:OnAllHeroesInGame()
     self.revealer = CreateUnitByName(
-            'npc_vision_revealer',
+            'npc_leader_revealer',
             Vector(0, 0, 0),
             false, nil, nil,
             DOTA_TEAM_GOODGUYS
