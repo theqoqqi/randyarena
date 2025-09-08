@@ -731,7 +731,7 @@
 	    "AbilityTextureName"            "item_ancient_sphere"
 	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
 	    "ItemQuality"                   "rare"
-	    "ItemCost"                      "275"
+	    "ItemCost"                      "285"
 	    "IsTempestDoubleClonable"		"0"
 	    "ItemSellable"					"1"
 	    "PlayerSpecificCooldown"		"1"
@@ -764,7 +764,7 @@
 	    "ItemResult"					"item_bracer_agility"
 	    "ItemRequirements"
 	    {
-	        "01"						"item_belt_of_strength;item_slippers;item_ancient_sphere"
+	        "01"						"item_bracer;item_bracer;item_wraith_band;item_ancient_sphere"
 	    }
 	}
 	//=================================================================================================================
@@ -780,40 +780,19 @@
 	    "AbilityTextureName"            "item_bracer_agility"
 	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 	    "ItemQuality"                   "rare"
-	    "ItemCost"                      "870"
+	    "ItemCost"                      "1800"
 	
-	    "AbilityCooldown"				"90.0"
+	    "AbilityCooldown"				"45.0"
 	    "AbilitySharedCooldown"			"ancient_start_item"
 	
-	    "AbilitySpecial" {
-	        "_" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "clock_time"                    "10"
-	        }
-	        "0" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "primary_attribute_bonus"       "12"
-	        }
-	        "1" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "secondary_attribute_bonus"     "9"
-	        }
-	        "2" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "tertiary_attribute_bonus"      "3"
-	        }
-	        "3" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "attack_speed_bonus_passive"    "10"
-	        }
-	        "4" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "attack_speed_bonus_active"     "50"
-	        }
-	        "5" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "duration"                      "10"
-	        }
+	    "AbilityValues" {
+	        "clock_time"                    "999"
+	        "primary_attribute_bonus"       "15"
+	        "secondary_attribute_bonus"     "12"
+	        "tertiary_attribute_bonus"      "6"
+	        "attack_speed_bonus_passive"    "10"
+	        "attack_speed_bonus_active"     "80"
+	        "duration"                      "10"
 	    }
 	}
 	//=================================================================================================================
@@ -839,7 +818,7 @@
 	    "ItemResult"					"item_bracer_intellect"
 	    "ItemRequirements"
 	    {
-	        "01"						"item_belt_of_strength;item_mantle;item_ancient_sphere"
+	        "01"						"item_bracer;item_bracer;item_null_talisman;item_ancient_sphere"
 	    }
 	}
 	//=================================================================================================================
@@ -855,40 +834,19 @@
 	    "AbilityTextureName"            "item_bracer_intellect"
 	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 	    "ItemQuality"                   "rare"
-	    "ItemCost"                      "870"
+	    "ItemCost"                      "1800"
 	
-	    "AbilityCooldown"				"90.0"
+	    "AbilityCooldown"				"45.0"
 	    "AbilitySharedCooldown"			"ancient_start_item"
 	
-	    "AbilitySpecial" {
-	        "_" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "clock_time"                    "10"
-	        }
-	        "0" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "primary_attribute_bonus"       "12"
-	        }
-	        "1" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "secondary_attribute_bonus"     "9"
-	        }
-	        "2" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "tertiary_attribute_bonus"      "3"
-	        }
-	        "3" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "magic_resist_bonus_passive"    "5"
-	        }
-	        "4" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "magic_resist_bonus_active"     "25"
-	        }
-	        "5" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "duration"                      "10"
-	        }
+	    "AbilityValues" {
+	        "clock_time"                    "999"
+	        "primary_attribute_bonus"       "15"
+	        "secondary_attribute_bonus"     "12"
+	        "tertiary_attribute_bonus"      "6"
+	        "magic_resist_bonus_passive"    "5"
+	        "magic_resist_bonus_active"     "40"
+	        "duration"                      "10"
 	    }
 	}
 	//=================================================================================================================
@@ -914,7 +872,7 @@
 	    "ItemResult"					"item_wraith_band_strength"
 	    "ItemRequirements"
 	    {
-	        "01"						"item_boots_of_elves;item_gauntlets;item_ancient_sphere"
+	        "01"						"item_wraith_band;item_wraith_band;item_bracer;item_ancient_sphere"
 	    }
 	}
 	//=================================================================================================================
@@ -930,40 +888,19 @@
 	    "AbilityTextureName"            "item_wraith_band_strength"
 	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 	    "ItemQuality"                   "rare"
-	    "ItemCost"                      "870"
+	    "ItemCost"                      "1800"
 	
-	    "AbilityCooldown"				"90.0"
+	    "AbilityCooldown"				"45.0"
 	    "AbilitySharedCooldown"			"ancient_start_item"
 	
-	    "AbilitySpecial" {
-	        "_" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "clock_time"                    "10"
-	        }
-	        "0" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "primary_attribute_bonus"       "12"
-	        }
-	        "1" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "secondary_attribute_bonus"     "9"
-	        }
-	        "2" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "tertiary_attribute_bonus"      "3"
-	        }
-	        "3" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "damage_bonus_passive"          "5"
-	        }
-	        "4" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "damage_bonus_active"           "25"
-	        }
-	        "5" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "duration"                      "5"
-	        }
+	    "AbilityValues" {
+	        "clock_time"                    "999"
+	        "primary_attribute_bonus"       "15"
+	        "secondary_attribute_bonus"     "12"
+	        "tertiary_attribute_bonus"      "6"
+	        "damage_bonus_passive"          "5"
+	        "damage_bonus_active"           "40"
+	        "duration"                      "5"
 	    }
 	}
 	//=================================================================================================================
@@ -989,7 +926,7 @@
 	    "ItemResult"					"item_wraith_band_intellect"
 	    "ItemRequirements"
 	    {
-	        "01"						"item_boots_of_elves;item_mantle;item_ancient_sphere"
+	        "01"						"item_wraith_band;item_wraith_band;item_null_talisman;item_ancient_sphere"
 	    }
 	}
 	//=================================================================================================================
@@ -1005,40 +942,19 @@
 	    "AbilityTextureName"            "item_wraith_band_intellect"
 	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 	    "ItemQuality"                   "rare"
-	    "ItemCost"                      "870"
+	    "ItemCost"                      "1800"
 	
-	    "AbilityCooldown"				"90.0"
+	    "AbilityCooldown"				"45.0"
 	    "AbilitySharedCooldown"			"ancient_start_item"
 	
-	    "AbilitySpecial" {
-	        "_" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "clock_time"                    "10"
-	        }
-	        "0" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "primary_attribute_bonus"       "12"
-	        }
-	        "1" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "secondary_attribute_bonus"     "9"
-	        }
-	        "2" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "tertiary_attribute_bonus"      "3"
-	        }
-	        "3" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "move_speed_bonus_passive"      "15"
-	        }
-	        "4" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "move_speed_bonus_active"       "75"
-	        }
-	        "5" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "duration"                      "5"
-	        }
+	    "AbilityValues" {
+	        "clock_time"                    "999"
+	        "primary_attribute_bonus"       "15"
+	        "secondary_attribute_bonus"     "12"
+	        "tertiary_attribute_bonus"      "6"
+	        "move_speed_bonus_passive"      "15"
+	        "move_speed_bonus_active"       "120"
+	        "duration"                      "5"
 	    }
 	}
 	//=================================================================================================================
@@ -1064,7 +980,7 @@
 	    "ItemResult"					"item_null_talisman_strength"
 	    "ItemRequirements"
 	    {
-	        "01"						"item_robe;item_gauntlets;item_ancient_sphere"
+	        "01"						"item_null_talisman;item_null_talisman;item_bracer;item_ancient_sphere"
 	    }
 	}
 	//=================================================================================================================
@@ -1080,40 +996,19 @@
 	    "AbilityTextureName"            "item_null_talisman_strength"
 	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 	    "ItemQuality"                   "rare"
-	    "ItemCost"                      "870"
+	    "ItemCost"                      "1800"
 	
-	    "AbilityCooldown"				"90.0"
+	    "AbilityCooldown"				"45.0"
 	    "AbilitySharedCooldown"			"ancient_start_item"
 	
-	    "AbilitySpecial" {
-	        "_" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "clock_time"                    "10"
-	        }
-	        "0" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "primary_attribute_bonus"       "12"
-	        }
-	        "1" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "secondary_attribute_bonus"     "9"
-	        }
-	        "2" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "tertiary_attribute_bonus"      "3"
-	        }
-	        "3" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "mana_reduction_bonus_passive"  "5"
-	        }
-	        "4" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "mana_reduction_bonus_active"   "25"
-	        }
-	        "5" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "duration"                      "10"
-	        }
+	    "AbilityValues" {
+	        "clock_time"                    "999"
+	        "primary_attribute_bonus"       "15"
+	        "secondary_attribute_bonus"     "12"
+	        "tertiary_attribute_bonus"      "6"
+	        "mana_reduction_bonus_passive"  "5"
+	        "mana_reduction_bonus_active"   "40"
+	        "duration"                      "10"
 	    }
 	}
 	//=================================================================================================================
@@ -1139,7 +1034,7 @@
 	    "ItemResult"					"item_null_talisman_agility"
 	    "ItemRequirements"
 	    {
-	        "01"						"item_robe;item_slippers;item_ancient_sphere"
+	        "01"						"item_null_talisman;item_null_talisman;item_wraith_band;item_ancient_sphere"
 	    }
 	}
 	//=================================================================================================================
@@ -1155,40 +1050,19 @@
 	    "AbilityTextureName"            "item_null_talisman_agility"
 	    "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
 	    "ItemQuality"                   "rare"
-	    "ItemCost"                      "870"
+	    "ItemCost"                      "1800"
 	
-	    "AbilityCooldown"				"90.0"
+	    "AbilityCooldown"				"45.0"
 	    "AbilitySharedCooldown"			"ancient_start_item"
 	
-	    "AbilitySpecial" {
-	        "_" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "clock_time"                    "10"
-	        }
-	        "0" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "primary_attribute_bonus"       "12"
-	        }
-	        "1" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "secondary_attribute_bonus"     "9"
-	        }
-	        "2" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "tertiary_attribute_bonus"      "3"
-	        }
-	        "3" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "spell_amp_bonus_passive"       "4"
-	        }
-	        "4" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "spell_amp_bonus_active"        "20"
-	        }
-	        "5" {
-	            "var_type"                      "FIELD_INTEGER"
-	            "duration"                      "10"
-	        }
+	    "AbilityValues" {
+	        "clock_time"                    "999"
+	        "primary_attribute_bonus"       "15"
+	        "secondary_attribute_bonus"     "12"
+	        "tertiary_attribute_bonus"      "6"
+	        "spell_amp_bonus_passive"       "4"
+	        "spell_amp_bonus_active"        "32"
+	        "duration"                      "10"
 	    }
 	}
 	//=================================================================================================================
@@ -1483,21 +1357,6 @@
 	}
 	"DOTAAbilities"
 	{
-	    //=================================================================================================================
-	    // Bracer
-	    //=================================================================================================================
-	    "item_bracer"
-	    {
-			"ItemPurchasable"				"0"
-	
-			"AbilityValues"
-	        {
-	            "clock_time"			"10"
-	        }
-	    }
-	}
-	"DOTAAbilities"
-	{
 	    "item_dagon_2"      "REMOVE"
 	    "item_dagon_3"      "REMOVE"
 	    "item_dagon_4"      "REMOVE"
@@ -1619,21 +1478,6 @@
 			"ItemPurchasable"				"1"
 	        "IsObsolete"                    "0"
 		}
-	}
-	"DOTAAbilities"
-	{
-	    //=================================================================================================================
-	    // Null Talisman
-	    //=================================================================================================================
-	    "item_null_talisman"
-	    {
-			"ItemPurchasable"				"1"
-			
-			"AbilityValues"
-	        {
-	            "clock_time"			"10"
-	        }
-	    }
 	}
 	"DOTAAbilities"
 	{
@@ -1837,20 +1681,5 @@
 			// 	}
 			// }
 		}
-	}
-	"DOTAAbilities"
-	{
-	    //=================================================================================================================
-	    // Wraith Band
-	    //=================================================================================================================
-	    "item_wraith_band"
-	    {
-			"ItemPurchasable"				"0"
-	
-			"AbilityValues"
-	        {
-	            "clock_time"			"10"
-	        }
-	    }
 	}
 }

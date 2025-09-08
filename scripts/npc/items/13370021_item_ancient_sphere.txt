@@ -10,7 +10,7 @@
     "AbilityTextureName"            "item_ancient_sphere"
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_PASSIVE"
     "ItemQuality"                   "rare"
-    "ItemCost"                      "275"
+    "ItemCost"                      "285"
     "IsTempestDoubleClonable"		"0"
     "ItemSellable"					"1"
     "PlayerSpecificCooldown"		"1"

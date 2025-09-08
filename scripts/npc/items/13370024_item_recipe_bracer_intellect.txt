@@ -21,6 +21,6 @@
     "ItemResult"					"item_bracer_intellect"
     "ItemRequirements"
     {
-        "01"						"item_belt_of_strength;item_mantle;item_ancient_sphere"
+        "01"						"item_bracer;item_bracer;item_null_talisman;item_ancient_sphere"
     }
 }

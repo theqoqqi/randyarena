@@ -21,6 +21,6 @@
     "ItemResult"					"item_null_talisman_agility"
     "ItemRequirements"
     {
-        "01"						"item_robe;item_slippers;item_ancient_sphere"
+        "01"						"item_null_talisman;item_null_talisman;item_wraith_band;item_ancient_sphere"
     }
 }

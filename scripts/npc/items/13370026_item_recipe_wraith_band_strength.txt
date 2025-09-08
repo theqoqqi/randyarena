@@ -21,6 +21,6 @@
     "ItemResult"					"item_wraith_band_strength"
     "ItemRequirements"
     {
-        "01"						"item_boots_of_elves;item_gauntlets;item_ancient_sphere"
+        "01"						"item_wraith_band;item_wraith_band;item_bracer;item_ancient_sphere"
     }
 }

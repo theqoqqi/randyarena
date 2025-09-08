@@ -21,6 +21,6 @@
     "ItemResult"					"item_bracer_agility"
     "ItemRequirements"
     {
-        "01"						"item_belt_of_strength;item_slippers;item_ancient_sphere"
+        "01"						"item_bracer;item_bracer;item_wraith_band;item_ancient_sphere"
     }
 }

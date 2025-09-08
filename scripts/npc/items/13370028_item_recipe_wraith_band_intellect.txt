@@ -21,6 +21,6 @@
     "ItemResult"					"item_wraith_band_intellect"
     "ItemRequirements"
     {
-        "01"						"item_boots_of_elves;item_mantle;item_ancient_sphere"
+        "01"						"item_wraith_band;item_wraith_band;item_null_talisman;item_ancient_sphere"
     }
 }

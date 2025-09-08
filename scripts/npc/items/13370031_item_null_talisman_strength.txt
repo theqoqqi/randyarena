@@ -11,39 +11,18 @@
     "AbilityTextureName"            "item_null_talisman_strength"
     "AbilityBehavior"               "DOTA_ABILITY_BEHAVIOR_IMMEDIATE | DOTA_ABILITY_BEHAVIOR_NO_TARGET"
     "ItemQuality"                   "rare"
-    "ItemCost"                      "870"
+    "ItemCost"                      "1800"
 
-    "AbilityCooldown"				"90.0"
+    "AbilityCooldown"				"45.0"
     "AbilitySharedCooldown"			"ancient_start_item"
 
-    "AbilitySpecial" {
-        "_" {
-            "var_type"                      "FIELD_INTEGER"
-            "clock_time"                    "10"
-        }
-        "0" {
-            "var_type"                      "FIELD_INTEGER"
-            "primary_attribute_bonus"       "12"
-        }
-        "1" {
-            "var_type"                      "FIELD_INTEGER"
-            "secondary_attribute_bonus"     "9"
-        }
-        "2" {
-            "var_type"                      "FIELD_INTEGER"
-            "tertiary_attribute_bonus"      "3"
-        }
-        "3" {
-            "var_type"                      "FIELD_INTEGER"
-            "mana_reduction_bonus_passive"  "5"
-        }
-        "4" {
-            "var_type"                      "FIELD_INTEGER"
-            "mana_reduction_bonus_active"   "25"
-        }
-        "5" {
-            "var_type"                      "FIELD_INTEGER"
-            "duration"                      "10"
-        }
+    "AbilityValues" {
+        "clock_time"                    "999"
+        "primary_attribute_bonus"       "15"
+        "secondary_attribute_bonus"     "12"
+        "tertiary_attribute_bonus"      "6"
+        "mana_reduction_bonus_passive"  "5"
+        "mana_reduction_bonus_active"   "40"
+        "duration"                      "10"
     }
 }
