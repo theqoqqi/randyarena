@@ -134,6 +134,41 @@ function GetItemKvValue(itemName, valueName)
     return nil;
 end
 
+function GetAbilityKvByName(abilityName)
+    return KV_ABILITIES[abilityName];
+end
+
+function GetAbilityKvValue(abilityName, valueName)
+    if KV_ABILITIES[abilityName] then
+        return KV_ABILITIES[abilityName][valueName];
+    end
+    return nil;
+end
+
+function GetHeroAbilitiesKvByName(heroName)
+    return KV_HERO_ABILITIES[heroName];
+end
+
+function GetHeroAbilityKvByName(heroName, abilityName)
+    local heroAbilities = GetHeroAbilitiesKvByName(heroName);
+
+    if heroAbilities then
+        return heroAbilities[abilityName];
+    end
+
+    return nil;
+end
+
+function GetHeroAbilityKvValue(heroName, abilityName, valueName)
+    local heroAbility = GetHeroAbilityKvByName(heroName, abilityName);
+
+    if heroAbility then
+        return heroAbility[valueName];
+    end
+
+    return nil;
+end
+
 function GetItemSpecialValue(item, key)
     return GetItemSpecialValueForLevel(item, key, 1);
 end
@@ -217,3 +252,22 @@ MergeTables(KV_ABILITIES, LoadKeyValues('scripts/npc/npc_abilities_override.txt'
 
 KV_HEROES = LoadKeyValues('scripts/npc/npc_heroes.txt');
 MergeTables(KV_HEROES, LoadKeyValues('scripts/npc/npc_heroes_custom.txt'));
+
+KV_HERO_ABILITIES = {};
+
+for heroNpcName, kvHero in pairs(KV_HEROES) do
+    if heroNpcName ~= 'Version' and heroNpcName ~= 'npc_dota_hero_base' then
+        local heroName = ParseHeroName(heroNpcName);
+        local fileName = 'scripts/npc/heroes/' .. heroNpcName .. '.txt';
+        local heroAbilities = LoadKeyValues(fileName);
+
+        KV_HERO_ABILITIES[heroName] = heroAbilities;
+        KV_HERO_ABILITIES[heroNpcName] = heroAbilities;
+
+        for abilityName, kvAbility in pairs(heroAbilities) do
+            if abilityName ~= 'Version' then
+                KV_ABILITIES[abilityName] = kvAbility;
+            end
+        end
+    end
+end
