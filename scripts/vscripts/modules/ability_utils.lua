@@ -161,6 +161,64 @@ function AbilityUtils:ForEachVisibleAbility(heroEntity, callback)
     end);
 end
 
+function AbilityUtils:IsAbilityInstanceVisible(ability)
+    if not ability then
+        return false;
+    end
+
+    if ability:IsHidden() then
+        return false;
+    end
+
+    local abilityName = ability:GetAbilityName();
+
+    if GetAbilityKvValue(abilityName, 'Innate') then
+        return false;
+    end
+
+    local heroEntity = ability:GetCaster();
+
+    if not heroEntity then
+        return false;
+    end
+
+    if GetAbilityKvValue(abilityName, 'IsGrantedByScepter') then
+        return heroEntity:HasScepter();
+    end
+
+    if GetAbilityKvValue(abilityName, 'IsGrantedByShard') then
+        return heroEntity:HasModifier('modifier_item_aghanims_shard');
+    end
+
+    return true;
+end
+
+function AbilityUtils:IsAbilityVisibleByDefault(abilityName)
+    if AbilityUtils:HasFlag(abilityName, 'AbilityBehavior', 'DOTA_ABILITY_BEHAVIOR_HIDDEN') then
+        return false;
+    end
+
+    if GetAbilityKvValue(abilityName, 'Innate') then
+        return false;
+    end
+
+    if GetAbilityKvValue(abilityName, 'IsGrantedByScepter') then
+        return false;
+    end
+
+    if GetAbilityKvValue(abilityName, 'IsGrantedByShard') then
+        return false;
+    end
+
+    return true;
+end
+
+function AbilityUtils:HasFlag(abilityName, valueName, flagName)
+    local flagListString = GetAbilityKvValue(abilityName, valueName);
+
+    return string.match(flagListString, '(^|%s*)' .. flagName .. '(%s*|$)');
+end
+
 function AbilityUtils:ForEachAbility(heroEntity, callback)
     for abilityIndex = 0, 5 do
         local ability = heroEntity:GetAbilityByIndex(abilityIndex);
