@@ -27,17 +27,22 @@ function ReorganiseTable()
 
 					logTotal = logTotal + 1;
 
-					if DISABLE_SWAP_RESTRICTIONS or bit.band(bits, SWAPPABLE) == SWAPPABLE then
+					local isVisible = AbilityUtils:IsAbilityVisibleByDefault(abilityName);
+					local hasSwappableBit = bit.band(bits, SWAPPABLE) == SWAPPABLE;
+					local hasDiscardableBit = bit.band(bits, DISCARDABLE) == DISCARDABLE;
+					local hasDeliverableBit = bit.band(bits, DELIVERABLE) == DELIVERABLE;
+
+					if isVisible and (DISABLE_SWAP_RESTRICTIONS or hasSwappableBit) then
 						heroAbilities.swappable[index] = abilityName;
 						logSwappable = logSwappable + 1;
 					end
 
-					if DISABLE_SWAP_RESTRICTIONS or bit.band(bits, DISCARDABLE) == DISCARDABLE then
+					if isVisible and (DISABLE_SWAP_RESTRICTIONS or hasDiscardableBit) then
 						heroAbilities.discardable[index] = abilityName;
 						logDiscardable = logDiscardable + 1;
 					end
 
-					if bit.band(bits, DELIVERABLE) == DELIVERABLE then
+					if isVisible and hasDeliverableBit then
 						heroAbilities.deliverable[index] = abilityName;
 						logDeliverable = logDeliverable + 1;
 					end

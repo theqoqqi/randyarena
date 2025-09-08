@@ -210,6 +210,10 @@ end
 function AbilityUtils:HasFlag(abilityName, valueName, flagName)
     local flagListString = GetAbilityKvValue(abilityName, valueName);
 
+    if not flagListString then
+        return false;
+    end
+
     return string.match(flagListString, '(^|%s*)' .. flagName .. '(%s*|$)');
 end
 
