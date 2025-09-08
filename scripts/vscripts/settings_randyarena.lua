@@ -3,9 +3,9 @@
 PARTICLES_FOLDER = 'particles/maps/solo';
 
 DEBUG_ABILITY_CHESTS = true and IsInToolsMode();
-DEBUG_ABILITY_RANDOMIZER = false and IsInToolsMode();
+DEBUG_ABILITY_RANDOMIZER = true and IsInToolsMode();
 FAST_START = true and IsInToolsMode();
-DEBUG_ABILITY_CHEST = false and IsInToolsMode();
+DEBUG_ABILITY_CHEST = true and IsInToolsMode();
 DEBUG_RUNES = false and IsInToolsMode();
 DEBUG_DISABLE_CREATOR = true or not IsInToolsMode();
 DISABLE_SWAP_RESTRICTIONS = true;
@@ -13,18 +13,23 @@ DISABLE_SWAP_RESTRICTIONS = true;
 if DEBUG_ABILITY_CHEST then
 	FORCE_ABILITY_COURIER = 'hoodwink';
 	FORCE_CHEST_ABILITY = {
-		'abyssal_underlord_dark_portal',
-		'hoodwink_scurry',
-		'hoodwink_sharpshooter',
+		{
+			heroName = 'abyssal_underlord',
+			abilityName = 'abyssal_underlord_dark_portal',
+		},
 	};
 end
 
 if DEBUG_ABILITY_RANDOMIZER then
 	FORCE_RANDOMIZED_ABILITY = {
-		'muerta_dead_shot',
-		'muerta_the_calling',
-		'muerta_gunslinger',
-		'muerta_pierce_the_veil',
+		{
+			heroName = 'ringmaster',
+			abilityName = 'ringmaster_the_box',
+		},
+		{
+			heroName = 'mars',
+			abilityName = 'mars_bulwark',
+		},
 	};
 end
 
@@ -44,13 +49,14 @@ end
 
 if FAST_START then
 	SKIP_TEAM_SETUP = true;
-	FORCE_PICKED_HERO = 'npc_dota_hero_oracle';
+	FORCE_PICKED_HERO = 'npc_dota_hero_faceless_void';
 else
 	SKIP_TEAM_SETUP = false;
 	FORCE_PICKED_HERO = nil;
 end
 
-HEROES_TO_PRECACHE = 15;
+ABILITIES_TO_DELIVERY = 15;
+ABILITIES_TO_PRECACHE = ABILITIES_TO_DELIVERY + 20;
 CLOSE_TO_VICTORY_THRESHOLD = 5;
 ABILITY_CHEST_THINKING_TIME = IsInToolsMode() and 5 or 17;
 

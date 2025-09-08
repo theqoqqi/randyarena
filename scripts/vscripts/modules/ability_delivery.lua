@@ -67,18 +67,7 @@ function AbilityDelivery:OnGameInProgress()
     Timers:CreateTimer({
         endTime = ABILITY_CHEST_SPAWN_TIME_FIRST - 3,
         callback = function()
-
-            local abilityInfo;
-            if DEBUG_ABILITY_CHEST and #FORCE_CHEST_ABILITY > 0 then
-                abilityInfo = {
-                    heroName = FORCE_ABILITY_COURIER,
-                    abilityName = table.remove(FORCE_CHEST_ABILITY, 1),
-                };
-            elseif #self.randyArena.abilitiesToDelivery > 0 then
-                abilityInfo = table.remove(self.randyArena.abilitiesToDelivery, 1);
-            else
-                abilityInfo = ConsumeRandomFromTable(self.randyArena.unusedAbilityPool);
-            end
+            local abilityInfo = self:ConsumeRandomAbilityFromPool();
 
             self:SpawnAbilityCourier(abilityInfo.heroName, abilityInfo.abilityName);
 
@@ -89,6 +78,14 @@ function AbilityDelivery:OnGameInProgress()
             return ABILITY_CHEST_SPAWN_TIME_DELAY;
         end
     });
+end
+
+function AbilityDelivery:ConsumeRandomAbilityFromPool()
+    if #self.randyArena.abilitiesToDelivery > 0 then
+        return table.remove(self.randyArena.abilitiesToDelivery, 1);
+    end
+
+    return ConsumeRandomFromTable(self.randyArena.unusedAbilityPool);
 end
 
 function AbilityDelivery:SpawnAbilityCourier(heroName, abilityName)

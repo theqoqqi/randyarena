@@ -285,6 +285,7 @@ function RandyArena:RemoveDuplicatedAbilities()
 	-- Способности для доставки подбираются до начала игры,
 	-- но отфильтровать их можно только после появления всех героев.
 	self.abilitiesToDelivery = table.filter(self.abilitiesToDelivery, filter, true);
+	self.precachedAbilities = table.filter(self.precachedAbilities, filter, true);
 	self.unusedAbilityPool = table.filter(self.unusedAbilityPool, filter, true);
 end
 

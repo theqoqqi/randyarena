@@ -23,22 +23,9 @@ function Precache(context)
 
 	local kvHeroes = LoadKeyValues('scripts/npc/npc_heroes.txt');
 
-	local unusedAbilityPool = AbilityDelivery:GetAllDeliverableAbilities();
-	local abilitiesToDelivery = {};
-
-	local courierCount = HEROES_TO_PRECACHE;
-
-	for i = 1, courierCount do
-		local abilityInfo = ConsumeRandomFromTable(unusedAbilityPool);
-		local heroName = abilityInfo.heroName;
-		PrecacheUnitByNameAsync('npc_dota_hero_' .. heroName, function(...) end);
---		PrecacheModel('models/heroes/' .. heroName .. '/' .. heroName .. '.vmdl', context);
-		table.insert(abilitiesToDelivery, abilityInfo);
-		print('Random ability added: ' .. abilityInfo.abilityName .. ' (' .. heroName .. ')');
-	end
-
-	RandyArena.abilitiesToDelivery = abilitiesToDelivery;
-	RandyArena.unusedAbilityPool = unusedAbilityPool;
+	RandyArena.unusedAbilityPool = AbilityDelivery:GetAllDeliverableAbilities();
+	RandyArena.precachedAbilities = CreatePrecachedAbilityPool(RandyArena.unusedAbilityPool);
+	RandyArena.abilitiesToDelivery = CreateAbilitiesToDeliveryPool(RandyArena.unusedAbilityPool);
 
 	for heroName, kvHero in pairs(kvHeroes) do
 		if heroName ~= 'Version' and heroName ~= 'npc_dota_hero_base' then
@@ -63,6 +50,61 @@ function Precache(context)
 	PrecacheResource('model', 'models/props_gameplay/treasure_chest001.vmdl', context);
 
 	RandyArena.freePreloadedCourierModels = freePreloadedCourierModels;
+end
+
+function CreatePrecachedAbilityPool(unusedAbilityPool)
+	local precachedAbilities = {};
+
+	if DEBUG_ABILITY_RANDOMIZER then
+		for _, abilityInfo in pairs(FORCE_RANDOMIZED_ABILITY) do
+			PrecacheAbility(abilityInfo);
+			table.insert(precachedAbilities, abilityInfo);
+
+			print('Precached ability:', abilityInfo.abilityName, '(using debug)');
+		end
+	end
+
+	for i = 1, ABILITIES_TO_PRECACHE - ABILITIES_TO_DELIVERY do
+		local abilityInfo = ConsumeRandomFromTable(unusedAbilityPool);
+
+		PrecacheAbility(abilityInfo);
+		table.insert(precachedAbilities, abilityInfo);
+
+		print('Precached ability:', abilityInfo.abilityName);
+	end
+
+	return precachedAbilities;
+end
+
+function CreateAbilitiesToDeliveryPool(unusedAbilityPool)
+	local abilitiesToDelivery = {};
+
+	if DEBUG_ABILITY_CHEST then
+		for _, abilityInfo in pairs(FORCE_CHEST_ABILITY) do
+			PrecacheAbility(abilityInfo);
+			table.insert(abilitiesToDelivery, abilityInfo);
+
+			print('Random ability added: ', abilityInfo.abilityName, '(using debug)');
+		end
+	end
+
+	for i = 1, ABILITIES_TO_DELIVERY do
+		local abilityInfo = ConsumeRandomFromTable(unusedAbilityPool);
+
+		PrecacheAbility(abilityInfo);
+		table.insert(abilitiesToDelivery, abilityInfo);
+
+		print('Random ability added: ', abilityInfo.abilityName);
+	end
+
+	return abilitiesToDelivery;
+end
+
+function PrecacheAbility(abilityInfo)
+	local heroName = abilityInfo.heroName;
+
+	PrecacheUnitByNameAsync('npc_dota_hero_' .. heroName, function(...) end);
+	--PrecacheModel('models/heroes/' .. heroName .. '/' .. heroName .. '.vmdl', context);
 end
 
 function Activate()

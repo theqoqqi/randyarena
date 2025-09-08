@@ -60,16 +60,7 @@ function AbilityRandomizer:OnAbilityRandomized(event)
         return;
     end
 
-    local abilityInfo;
-    if DEBUG_ABILITY_RANDOMIZER and #FORCE_RANDOMIZED_ABILITY > 0 then
-        abilityInfo = {
-            heroName = nil,
-            abilityName = table.remove(FORCE_RANDOMIZED_ABILITY, 1),
-        };
-    else
-        -- TODO: preload sounds
-        abilityInfo = ConsumeRandomFromTable(self.randyArena.unusedAbilityPool);
-    end
+    local abilityInfo = self:ConsumeRandomAbilityFromPool();
 
     AbilityUtils:SetHeroAbilityByIndex(heroEntity, abilityIndex, abilityInfo.abilityName);
     if RandyArena.gameInProgress then
@@ -77,6 +68,14 @@ function AbilityRandomizer:OnAbilityRandomized(event)
     else
         heroEntity:SetAbilityPoints(abilityPoints - 1);
     end
+end
+
+function AbilityRandomizer:ConsumeRandomAbilityFromPool()
+    if #self.randyArena.precachedAbilities > 0 then
+        return table.remove(self.randyArena.precachedAbilities, 1);
+    end
+
+    return ConsumeRandomFromTable(self.randyArena.unusedAbilityPool);
 end
 
 function AbilityRandomizer:OnRandomizeAbilityCancelled(event)
