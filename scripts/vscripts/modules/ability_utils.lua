@@ -149,6 +149,16 @@ function AbilityUtils:GetVisibleAbilityIndices(heroEntity)
     return indices;
 end
 
+function AbilityUtils:GetVisibleByDefaultAbilityIndices(heroEntity)
+    local indices = {};
+    AbilityUtils:ForEachAbility(heroEntity, function(ability, index, abilityName)
+        if AbilityUtils:IsAbilityVisibleByDefault(abilityName) then
+            table.insert(indices, index);
+        end
+    end);
+    return indices;
+end
+
 function AbilityUtils:ForEachAbilityInfo(heroEntity, callback)
     for abilityIndex = 0, 5 do
         callback(AbilityUtils:GetAbilityInfoByIndex(heroEntity, abilityIndex), abilityIndex);

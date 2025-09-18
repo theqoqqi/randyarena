@@ -42,6 +42,11 @@ function AbilityRandomizer:OnRequestRandomizeAbility(event)
     local abilityCount = AbilityUtils:GetVisibleAbilityCount(heroEntity);
     local visibleIndices = AbilityUtils:GetVisibleAbilityIndices(heroEntity);
     local selectableIndices = table.keys(ABILITIES[heroName].discardable);
+
+    if DISABLE_SWAP_RESTRICTIONS then
+        selectableIndices = visibleIndices;
+    end
+
     CustomGameEventManager:Send_ServerToPlayer(playerEntity, 'randomize_ability_response', {
         abilityCount = abilityCount,
         visibleAbilities = visibleIndices,

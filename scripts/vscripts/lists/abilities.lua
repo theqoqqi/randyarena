@@ -32,12 +32,12 @@ function ReorganiseTable()
 					local hasDiscardableBit = bit.band(bits, DISCARDABLE) == DISCARDABLE;
 					local hasDeliverableBit = bit.band(bits, DELIVERABLE) == DELIVERABLE;
 
-					if isVisible and (DISABLE_SWAP_RESTRICTIONS or hasSwappableBit) then
+					if isVisible and hasSwappableBit then
 						heroAbilities.swappable[index] = abilityName;
 						logSwappable = logSwappable + 1;
 					end
 
-					if isVisible and (DISABLE_SWAP_RESTRICTIONS or hasDiscardableBit) then
+					if isVisible and hasDiscardableBit then
 						heroAbilities.discardable[index] = abilityName;
 						logDiscardable = logDiscardable + 1;
 					end

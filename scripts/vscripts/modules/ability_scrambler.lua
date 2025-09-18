@@ -34,6 +34,10 @@ function AbilityScrambler:OnAllHeroesInGame()
         local visibleIndices = AbilityUtils:GetVisibleAbilityIndices(heroEntity);
         local selectableIndices = table.keys(ABILITIES[heroName].swappable);
 
+        if DISABLE_SWAP_RESTRICTIONS then
+            selectableIndices = AbilityUtils:GetVisibleByDefaultAbilityIndices(heroEntity);
+        end
+
         CustomGameEventManager:Send_ServerToPlayer(playerEntity, 'hero_spawned', {
             useScrambler = RandyArena.gameSetup.freeRandoms == 0,
             abilityCount = abilityCount,

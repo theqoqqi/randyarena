@@ -294,7 +294,7 @@ function AbilityDelivery:OnAbilitySwapped(event)
     local heroEntity = Players:GetHeroEntity(playerId);
     local heroName = ParseHeroName(heroEntity:GetClassname());
 
-    if ABILITIES[heroName].discardable[abilityIndex] ~= nil then
+    if DISABLE_SWAP_RESTRICTIONS or ABILITIES[heroName].discardable[abilityIndex] ~= nil then
         AbilityUtils:SetHeroAbilityByIndex(heroEntity, abilityIndex, self.lastAbilityInChest);
         AbilityUtils:RandomizeAbilityLevel(heroEntity, abilityIndex);
         Timers:RemoveTimer(self.replaceAbilityTimer);
@@ -328,6 +328,11 @@ function AbilityDelivery:OnItemPickedUp(keys)
         local heroName = ParseHeroName(heroEntity:GetClassname());
         local visibleIndices = AbilityUtils:GetVisibleAbilityIndices(heroEntity);
         local selectableIndices = table.keys(ABILITIES[heroName].discardable);
+
+        if DISABLE_SWAP_RESTRICTIONS then
+            selectableIndices = visibleIndices;
+        end
+
         self.lastAbilityInChest = self.abilityInChest;
         CustomGameEventManager:Send_ServerToPlayer(playerEntity, 'ability_chest_used', {
             abilityCount = abilityCount,
