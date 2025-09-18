@@ -60,7 +60,8 @@ function AbilityScrambler:ShuffleAbilities()
         return;
     end
 
-    local pool = AbilityUtils:GetAllAbilitiesInfoByPlayers(true);
+    local swappableOnly = not DISABLE_SWAP_RESTRICTIONS;
+    local pool = AbilityUtils:GetAllAbilitiesInfoByPlayers(swappableOnly);
 
     local abilitiesToRoll = {};
     for i, playerIdOne in pairs(playerPool) do
@@ -101,7 +102,7 @@ function AbilityScrambler:OnAbilityScrambled(event)
     local heroEntity = Players:GetHeroEntity(playerId);
     local heroName = ParseHeroName(heroEntity:GetClassname());
 
-    if ABILITIES[heroName].swappable[abilityIndex] ~= nil then
+    if DISABLE_SWAP_RESTRICTIONS or ABILITIES[heroName].swappable[abilityIndex] ~= nil then
         self.abilitiesToScramble[playerId] = abilityIndex;
     end
 end

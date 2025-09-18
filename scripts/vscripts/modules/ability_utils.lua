@@ -46,7 +46,7 @@ function AbilityUtils:GetAllAbilitiesInfoByPlayers(swappableOnly)
                         list[abilityInfo.abilityIndex] = abilityInfo;
                     end
                 end
-            else
+            elseif AbilityUtils:IsAbilityVisibleByDefault(abilityInfo.abilityName) then
                 list[abilityInfo.abilityIndex] = abilityInfo;
             end
         end);
