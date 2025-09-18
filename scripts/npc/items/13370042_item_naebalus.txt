@@ -1,0 +1,28 @@
+//=================================================================================================================
+// Naebalus
+//=================================================================================================================
+"item_naebalus"
+{
+    // General
+    //-------------------------------------------------------------------------------------------------------------
+    "ID"							"13370042"
+    "BaseClass"                     "item_greater_crit"
+
+    "AbilityTextureName"            "item_naebalus"
+    "AbilityBehavior"				"DOTA_ABILITY_BEHAVIOR_PASSIVE"
+
+    // Item Info
+    //-------------------------------------------------------------------------------------------------------------
+    "ItemCost"						"10000"
+    "ItemShopTags"					"damage;crit;dps"
+    "ItemQuality"					"epic"
+    "ItemDeclarations"				"DECLARE_PURCHASES_TO_TEAMMATES | DECLARE_PURCHASES_IN_SPEECH | DECLARE_PURCHASES_TO_SPECTATORS"
+    "SuggestLategame"				"1"
+
+    "AbilityValues"
+    {
+        "bonus_damage"			"120"
+        "crit_chance"			"5"
+        "crit_multiplier"		"1500"
+    }
+}
