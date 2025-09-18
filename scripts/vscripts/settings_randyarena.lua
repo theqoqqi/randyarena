@@ -75,7 +75,7 @@ GAME_SETUP_OPTIONS = {
 	},
 	comebackFactor = {
 		options = { 1, 2, 3, 5, 10 },
-		defaultIndex = 0,
+		defaultIndex = 1,
 	},
 };
 
