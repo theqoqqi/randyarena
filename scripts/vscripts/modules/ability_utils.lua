@@ -185,7 +185,7 @@ function AbilityUtils:IsAbilityInstanceVisible(ability)
     local abilityName = ability:GetAbilityName();
 
     if GetAbilityKvValue(abilityName, 'Innate') then
-        return false;
+        return not ability:IsPassive();
     end
 
     local heroEntity = ability:GetCaster();
