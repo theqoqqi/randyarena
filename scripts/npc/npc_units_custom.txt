@@ -9,14 +9,13 @@
 		"StatusHealth"              "5000"
 		"TeamName"                  "DOTA_TEAM_NOTEAM"
 	}
-	"npc_vision_revealer"
+	"npc_leader_revealer"
 	{
 	    "BaseClass"					"npc_dota_creature"
 	    "Model"						"models/development/invisiblebox.vmdl"
 	    "Level"						"6"
 	    "Ability1"					"dota_ability_vision_revealer"
-	    "Ability2"					"dota_ability_reveal_invis"
-	    "Ability3"                  "dota_ability_dummy_unit"
+	    "Ability2"                  "dota_ability_dummy_unit"
 	    "AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
 	    "BountyXP"					"0"
 	    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
@@ -25,13 +24,14 @@
 	    "VisionDaytimeRange"		"600"
 	    "VisionNighttimeRange"		"600"
 	}
-	"npc_leader_revealer"
+	"npc_vision_revealer"
 	{
 	    "BaseClass"					"npc_dota_creature"
 	    "Model"						"models/development/invisiblebox.vmdl"
 	    "Level"						"6"
 	    "Ability1"					"dota_ability_vision_revealer"
-	    "Ability2"                  "dota_ability_dummy_unit"
+	    "Ability2"					"dota_ability_reveal_invis"
+	    "Ability3"                  "dota_ability_dummy_unit"
 	    "AttackCapabilities"		"DOTA_UNIT_CAP_NO_ATTACK"
 	    "BountyXP"					"0"
 	    "MovementCapabilities"		"DOTA_UNIT_CAP_MOVE_NONE"
