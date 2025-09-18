@@ -40,9 +40,11 @@ function AbilityRandomizer:OnRequestRandomizeAbility(event)
     local heroName = ParseHeroName(heroEntity:GetClassname());
 
     local abilityCount = AbilityUtils:GetVisibleAbilityCount(heroEntity);
+    local visibleIndices = AbilityUtils:GetVisibleAbilityIndices(heroEntity);
     local selectableIndices = table.keys(ABILITIES[heroName].discardable);
     CustomGameEventManager:Send_ServerToPlayer(playerEntity, 'randomize_ability_response', {
         abilityCount = abilityCount,
+        visibleAbilities = visibleIndices,
         allowedAbilities = selectableIndices
     });
 end

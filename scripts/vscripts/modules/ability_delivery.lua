@@ -326,10 +326,12 @@ function AbilityDelivery:OnItemPickedUp(keys)
 
         local abilityCount = AbilityUtils:GetVisibleAbilityCount(heroEntity);
         local heroName = ParseHeroName(heroEntity:GetClassname());
+        local visibleIndices = AbilityUtils:GetVisibleAbilityIndices(heroEntity);
         local selectableIndices = table.keys(ABILITIES[heroName].discardable);
         self.lastAbilityInChest = self.abilityInChest;
         CustomGameEventManager:Send_ServerToPlayer(playerEntity, 'ability_chest_used', {
             abilityCount = abilityCount,
+            visibleAbilities = visibleIndices,
             allowedAbilities = selectableIndices,
             timeToSelect = ABILITY_CHEST_THINKING_TIME
         });

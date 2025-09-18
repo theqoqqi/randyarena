@@ -31,11 +31,13 @@ function AbilityScrambler:OnAllHeroesInGame()
         local playerEntity = Players:GetPlayerEntity(playerId);
         local abilityCount = AbilityUtils:GetVisibleAbilityCount(heroEntity);
         local heroName = ParseHeroName(heroEntity:GetClassname());
+        local visibleIndices = AbilityUtils:GetVisibleAbilityIndices(heroEntity);
         local selectableIndices = table.keys(ABILITIES[heroName].swappable);
 
         CustomGameEventManager:Send_ServerToPlayer(playerEntity, 'hero_spawned', {
             useScrambler = RandyArena.gameSetup.freeRandoms == 0,
             abilityCount = abilityCount,
+            visibleAbilities = visibleIndices,
             allowedAbilities = selectableIndices,
             timeToSelect = PRE_GAME_TIME
         });
